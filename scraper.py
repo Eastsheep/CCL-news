@@ -222,6 +222,7 @@ def save(items):
     }
     DATA_FILE.parent.mkdir(exist_ok=True)
     DATA_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=1), "utf-8")
+    (ROOT / "web" / "news.json").write_text(json.dumps(payload, ensure_ascii=False), "utf-8")
     JS_FILE.write_text("window.NEWS_DATA = " + json.dumps(payload, ensure_ascii=False) + ";\n", "utf-8")
     log(f"[done] 共 {len(items)} 則，寫入 {DATA_FILE.name} 與 web/{JS_FILE.name}")
 

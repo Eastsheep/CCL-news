@@ -90,7 +90,7 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
 </div>
 <div class="wrap"><footer>資料來源：DIGITIMES、優分析 公開標題與摘要，全文請點連結至原網站閱讀。本頁僅供內部研究使用。</footer></div>
 
-<script src="news.js"></script>
+<script src="news.js" onerror="void 0"></script>
 <script>
 (function(){
   const S = {view:"time", q:"", range:90, comp:new Set(), topic:new Set(), src:new Set()};
@@ -99,8 +99,11 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
   const esc = s => String(s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
   async function init(){
-    if(!D){ try{ D = await (await fetch("../data/news.json")).json(); }catch(e){} }
-    if(!D){ $("sub").textContent = "找不到資料，請先執行 scraper.py"; return; }
+    // 線上版優先抓最新的 news.json（加時間參數避免瀏覽器快取舊資料）；本機直接開檔時用 news.js
+    if(location.protocol.startsWith("http")){
+      try{ const r = await fetch("news.json?t=" + Date.now(), {cache:"no-store"}); if(r.ok) D = await r.json(); }catch(e){}
+    }
+    if(!D){ $("sub").textContent = "資料載入失敗，請重新整理頁面。"; return; }
     $("sub").textContent = `來源：${(D.sources||[]).join("、")}　·　共 ${D.items.length} 則　·　最後更新 ${D.updated_at}`;
     buildChips(); bind(); render();
   }
