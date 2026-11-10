@@ -13,7 +13,9 @@ import re
 import sys
 import time
 import urllib.robotparser
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
+
+TW = timezone(timedelta(hours=8))
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, parse_qs, quote
 
@@ -212,7 +214,7 @@ def load_existing():
 def save(items):
     items = sorted(items.values(), key=lambda n: (n.get("date") or "", n["id"]), reverse=True)
     payload = {
-        "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "updated_at": datetime.now(TW).strftime("%Y-%m-%d %H:%M"),
         "sources": [x["name"] for x in config.SOURCES],
         "companies": list(config.COMPANIES.keys()),
         "topics": list(config.TOPICS.keys()),
@@ -253,7 +255,7 @@ def run():
             log(f"[drop] 不相關：{item['title'][:40]}")
             continue
         item["companies"], item["topics"] = classify(text)
-        item["fetched_at"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+        item["fetched_at"] = datetime.now(TW).strftime("%Y-%m-%d %H:%M")
         existing[item["id"]] = item
         log(f"[ok] {item['date']} {item['title'][:50]}")
 
