@@ -24,6 +24,12 @@ h1{font-size:22px;margin:0 0 4px}
 @media (max-width:820px){.layout{grid-template-columns:1fr}}
 aside{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;align-self:start;position:sticky;top:12px}
 @media (max-width:820px){aside{position:static}}
+body.nofilter .layout{grid-template-columns:1fr}
+body.nofilter aside{display:none}
+.tab.ftoggle{margin-right:6px}
+.tab.ftoggle::before{content:"▾ ";font-size:11px}
+body.nofilter .tab.ftoggle::before{content:"▸ "}
+.tab.ftoggle .n{display:inline-block;min-width:18px;margin-left:4px;padding:0 5px;border-radius:9px;background:var(--accent);color:#fff;font-size:11px}
 aside h3{font-size:13px;color:var(--muted);margin:14px 0 8px;font-weight:600}
 aside h3:first-child{margin-top:0}
 input[type=search],select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);font-size:14px}
@@ -85,6 +91,7 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
 
   <main>
     <div class="tabs" id="tabs">
+      <button class="tab ftoggle" id="ftoggle" type="button" aria-expanded="true">篩選</button>
       <button class="tab on" data-v="time">依時間</button>
       <button class="tab" data-v="company">依公司</button>
       <button class="tab" data-v="topic">依主題</button>
@@ -96,6 +103,10 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
 
 <script src="news.js" onerror="void 0"></script>
 <script>
+function imgFail(el){
+  const alt = el.getAttribute("data-alt");
+  if(alt){ el.removeAttribute("data-alt"); el.src = alt; } else { el.parentNode.remove(); }
+}
 (function(){
   const S = {view:"time", q:"", range:90, comp:new Set(), topic:new Set(), src:new Set()};
   let D = window.NEWS_DATA;
@@ -143,7 +154,10 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
   }
 
   function card(n){
-    const img = n.image ? `<a class="thumb" href="${esc(n.url)}" target="_blank" rel="noopener"><img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>` : "";
+    // 原站圖片若是 http，在 https 網頁會被擋：先試 https，失敗再經 images.weserv.nl 轉成 https，仍失敗就不顯示
+    const src = n.image ? n.image.replace(/^http:/, "https:") : "";
+    const alt = n.image && n.image.startsWith("http:") ? "https://images.weserv.nl/?url=" + encodeURIComponent(n.image.replace(/^http:\/\//, "")) : "";
+    const img = n.image ? `<a class="thumb" href="${esc(n.url)}" target="_blank" rel="noopener"><img src="${esc(src)}" data-alt="${esc(alt)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="imgFail(this)"></a>` : "";
     return `<div class="card">${img}<div class="body">
       <div class="dt">${n.date ? esc(n.date.replace(/-/g, "/")) : "日期待抓取"}</div>
       <a class="t" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
@@ -153,8 +167,15 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
     </div></div>`;
   }
 
+  function updateToggle(){
+    const n = S.src.size + S.comp.size + S.topic.size + (S.q.trim() ? 1 : 0);
+    const open = !document.body.classList.contains("nofilter");
+    $("ftoggle").innerHTML = (open ? "收合篩選" : "展開篩選") + (n ? `<span class="n">${n}</span>` : "");
+    $("ftoggle").setAttribute("aria-expanded", open);
+  }
+
   function render(){
-    buildChips();
+    buildChips(); updateToggle();
     const items = filtered();
     const L = $("list");
     if(!items.length){ L.innerHTML = '<div class="empty">沒有符合條件的新聞</div>'; return; }
@@ -174,11 +195,20 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
   }
 
   function bind(){
+    let saved = null;
+    try{ saved = localStorage.getItem("ccl-filter-open"); }catch(e){}
+    const startOpen = saved !== null ? saved === "1" : window.innerWidth > 820;
+    document.body.classList.toggle("nofilter", !startOpen);
+    $("ftoggle").onclick = () => {
+      const open = document.body.classList.toggle("nofilter") === false;
+      try{ localStorage.setItem("ccl-filter-open", open ? "1" : "0"); }catch(e){}
+      updateToggle();
+    };
     $("q").oninput = e => { S.q = e.target.value; render(); };
     $("range").onchange = e => { S.range = +e.target.value; render(); };
     $("clear").onclick = () => { S.src.clear(); S.comp.clear(); S.topic.clear(); S.q=""; $("q").value=""; render(); };
-    $("tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => {
-      $("tabs").querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
+    $("tabs").querySelectorAll(".tab[data-v]").forEach(b => b.onclick = () => {
+      $("tabs").querySelectorAll(".tab[data-v]").forEach(x => x.classList.remove("on"));
       b.classList.add("on"); S.view = b.dataset.v; render();
     });
   }
