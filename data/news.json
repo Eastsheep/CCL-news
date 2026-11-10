@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10 10:54",
+ "updated_at": "2026-11-10 11:04",
  "sources": [
   "DIGITIMES",
   "優分析"
@@ -98,6 +98,25 @@
    "fetched_at": "2026-11-10 02:26"
   },
   {
+   "id": "digitimes.com.tw:0000773104_U9D0HLSU169UQL36R6WHG",
+   "title": "SK海力士SOCAMM2訂單逐季增加　基板廠急擴產卻恐缺原料",
+   "date": "2026-11-02",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773104_U9D0HLSU169UQL36R6WHG",
+   "summary": "SK海力士（SK Hynix）傳正擴大用於NVIDIA下一代AI平台Vera Rubin的SOCAMM2生產，帶動相關印刷電路板（PCB）訂單增加。然而，隨著銅箔基板（CCL）等原材料供應吃緊，SOCAMM2用PCB價格也大幅上漲，基板廠商則加...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1102/773104-1-r6whg_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "漲價 / 報價",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
    "id": "uanalyze.com.tw:3383558111",
    "title": "AI 算力撞上傳輸天花板！PCB、CCL 材料迎「混種革命」，揭密下一波千億升級商機",
    "date": "2026-11-01",
@@ -157,6 +176,27 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:25"
+  },
+  {
+   "id": "digitimes.com.tw:0000772890_U1N7K75ULGAV0AL768GB8",
+   "title": "AI需求強勁、產能滿載　台光電3Q26營收創新高",
+   "date": "2026-10-29",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772890_U1N7K75ULGAV0AL768GB8",
+   "summary": "銅箔基板廠（CCL）台光電公布2026年第3季財報，受惠於AI產品高階材料強勁需求，產能滿載，單季營收達新台幣（以下同）608.8億元，再創單季新高，相較第2季成長28.8%，相較2025年同期成長142%。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1029/772890-1-68gb8_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "擴產 / 產能",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-10 11:02"
   },
   {
    "id": "uanalyze.com.tw:7874857861",
@@ -267,6 +307,27 @@
     "AI 伺服器 / 交換器"
    ],
    "fetched_at": "2026-11-10 02:24"
+  },
+  {
+   "id": "digitimes.com.tw:0000772178_DH30RV6M8QRJUC7CT68AF",
+   "title": "聯茂估2027年M9 CCL逐步放量　開發Low CTE材料鎖定CPO需求",
+   "date": "2026-10-21",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772178_DH30RV6M8QRJUC7CT68AF",
+   "summary": "自2023年起，全球主要CSP每年資本支出都呈現雙位數成長，驅動PCB與銅箔基板（CCL）的需求及材料升級。隨著AI伺服器高階CCL需求不斷快速提升，聯茂持續深耕AI，在高階膠系認證進度快馬加鞭。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1021/772178-1-t68af1113_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "聯茂"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器",
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-10 11:02"
   },
   {
    "id": "uanalyze.com.tw:8400457442",
@@ -677,6 +738,25 @@
    "fetched_at": "2026-11-10 02:31"
   },
   {
+   "id": "digitimes.com.tw:0000771369_O1Z4NP725XP5HXL25MDDM",
+   "title": "建滔積層板年內八度喊漲　2116以下薄布板料、PP調漲15%",
+   "date": "2026-10-13",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771369_O1Z4NP725XP5HXL25MDDM",
+   "summary": "在AI及HPC應用蓬勃發展下，電子材料供需缺口不斷擴大，推動PCB上游銅箔基板（CCL）漲勢延續。自2026年以來，中系龍頭大廠建滔積層板已八度喊漲。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1013/771369-1-5mddm_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "建滔"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "漲價 / 報價"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
    "id": "uanalyze.com.tw:8811856879",
    "title": "川湖、台光電如何崛起？QIC揭500家AI明日之星 估2030年市值成長5倍",
    "date": "2026-10-12",
@@ -748,6 +828,25 @@
     "玻纖布 / Low-Dk"
    ],
    "fetched_at": "2026-11-10 02:34"
+  },
+  {
+   "id": "digitimes.com.tw:0000770776_RLJ6PSS68DFE705MPR0Q0",
+   "title": "斗山史上最大CCL投資為何重押中國？　瞄準獲利、台灣需求",
+   "date": "2026-10-08",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770776_RLJ6PSS68DFE705MPR0Q0",
+   "summary": "斗山集團（Doosan Group）近期宣布在銅箔基板（CCL）領域投入創歷史新高的9,700億韓元（約7.2億美元），其中逾半數將押注中國，引發業界關注。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1008/770776-1-pr0q0_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-10 11:02"
   },
   {
    "id": "uanalyze.com.tw:4549656635",
@@ -901,6 +1000,23 @@
     "漲價 / 報價"
    ],
    "fetched_at": "2026-11-10 02:34"
+  },
+  {
+   "id": "digitimes.com.tw:0000770180_04R0YCM29UA5PGL8AL7VV",
+   "title": "NVIDIA掀PCB材料「無布化」革命　PTFE、HC兩路線並行驗證",
+   "date": "2026-10-02",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770180_04R0YCM29UA5PGL8AL7VV",
+   "summary": "AI伺服器架構升級持續引領PCB材料革命，面對高頻高速傳輸對訊號完整性的嚴苛要求，NVIDIA正攜手供應鏈測試「無布化」方案，啟動俗稱鐵氟龍的聚四氟乙烯（PTFE）、碳氫樹脂（HC）等新材料驗證，目標導入預定2027年下半量產的Rubin Ultra NV...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1002/770180-1-al7vv_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "樹脂 / 添加劑",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:04"
   },
   {
    "id": "uanalyze.com.tw:9807356194",
@@ -1116,6 +1232,26 @@
    "fetched_at": "2026-11-10 02:33"
   },
   {
+   "id": "digitimes.com.tw:0000769066_S281S3MA5FTT0T7D59GEI",
+   "title": "日東紡T-glass供不應求　斗山電子BG傳與中國合作開發替代品",
+   "date": "2026-09-21",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000769066_S281S3MA5FTT0T7D59GEI",
+   "summary": "隨著AI半導體市場擴大，T-glass玻纖布供應短缺問題逐漸變成長期化，有消息稱，三星電機（Semco）已要求銅箔基板（CCL）供應商斗山電子BG（Doosan Electronic BG）加快取得替代品。斗山電子BG傳已為此與中國材料業者展開T-glass玻...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0921/769066-1-59gei_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山",
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
    "id": "uanalyze.com.tw:9312955579",
    "title": "0918台股盤前｜台積電狂飆、台塑四寶暴衝，加權指數大漲 439.10 點強登月線！塑膠原料與貨櫃航運強勢領攻，CCL 銅箔基板重挫回檔，法人目標價鎖定禾榮科、南亞、昇達科",
    "date": "2026-09-18",
@@ -1133,6 +1269,25 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:34"
+  },
+  {
+   "id": "digitimes.com.tw:0000768964_VB78BC5C78XRKL3XPBZAA",
+   "title": "光進銅退引發PCB降規？　CPO交換機仍用M8 CCL",
+   "date": "2026-09-18",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000768964_VB78BC5C78XRKL3XPBZAA",
+   "summary": "光進銅退時代來臨，市場傳出，共同封裝光學（CPO）普及後，AI伺服器主板PCB高速傳輸需求倒退，導致銅箔基板（CCL）材料升級趨勢反轉，將由M8、M9全面降規至M4~M7，引發業界熱議，然而供應鏈業者駁斥此一說法。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0918/768964-1-pbzaa_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器",
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-10 11:02"
   },
   {
    "id": "uanalyze.com.tw:3340655536",
@@ -1335,6 +1490,44 @@
    "fetched_at": "2026-11-10 02:31"
   },
   {
+   "id": "digitimes.com.tw:0000767006_MVKLIBZV146EWB50VK70D",
+   "title": "Panasonic傳二度調漲CCL、PP　擴及IC載板材料漲幅達3成",
+   "date": "2026-09-01",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767006_MVKLIBZV146EWB50VK70D",
+   "summary": "供應鏈傳出，日本Panasonic 2026年來二度全面喊漲PCB材料價格，對象涵蓋銅箔基板（CCL）、半固化片（PP）等多項產品，終端應用更擴及IC載板，部分漲幅最高達到30%，新價格將適用於9月1日起出貨產品。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0901/767006-1-vk70d_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "松下"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "漲價 / 報價",
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000766875_8OO7RJI98UWTIW4KOPE29",
+   "title": "南韓CCL出口暴增近42%　 AI需求助攻、供應商業績沾光",
+   "date": "2026-09-01",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766875_8OO7RJI98UWTIW4KOPE29",
+   "summary": "AI基礎設施投資持續成長以及半導體朝大尺寸化發展，銅箔基板（CCL）使用量同步增加，也使南韓近期的CCL出口大幅增加，帶動如斗山電子BG（Doosan Electronic BG）、樂金化學（LG Chem）、樂天能源材料（Lotte Energy Mate...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0901/766875-1-ope29_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山"
+   ],
+   "topics": [
+    "銅箔 / HVLP"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
    "id": "uanalyze.com.tw:2035154084",
    "title": "高階 CCL 市場低估了什麼？台光電(2383) 已經跑遠了！下一檔誰接棒？",
    "date": "2026-08-31",
@@ -1356,6 +1549,26 @@
    "fetched_at": "2026-11-10 02:25"
   },
   {
+   "id": "digitimes.com.tw:0000766642_J5O5AIPU5LNI2H1NSJ6F4",
+   "title": "建滔積層板年內七度喊漲　7628以下薄布PP調漲20%",
+   "date": "2026-08-28",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766642_J5O5AIPU5LNI2H1NSJ6F4",
+   "summary": "銅箔基板（CCL）產業再傳漲聲，中系龍頭建滔積層板發布最新通知，受到玻纖布、銅箔等核心主材供應日益緊缺、價格大幅上漲影響，即日起對FR-4基板價格全面調漲10%，另在PP方面，7628（含）以上厚布價格亦上調10%；至於7628以下薄布漲幅則達到20%。<...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0828/766642-1-sj6f4_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "建滔"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "漲價 / 報價"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
    "id": "uanalyze.com.tw:6655754135",
    "title": "AI需求推升銅箔基板景氣　建滔積層板迎量價齊升、目標價升至42.43港元",
    "date": "2026-08-27",
@@ -1374,6 +1587,24 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:34"
+  },
+  {
+   "id": "digitimes.com.tw:0000766194_XG00AF4WLD2G3939Q1GUN",
+   "title": "記憶體封裝基板變更薄　斗山掌握13微米超薄CCL技術準備量產",
+   "date": "2026-08-27",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766194_XG00AF4WLD2G3939Q1GUN",
+   "summary": "斗山集團（Doosan Group）旗下銅箔基板（CCL）製造商斗山電子BG（Doosan Electronic Business Group），傳已掌握能將現有半導體封裝用CCL厚度減少5微米（µm）的技術，並將投入量產。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0827/766194-1-q1gun_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山"
+   ],
+   "topics": [
+    "銅箔 / HVLP"
+   ],
+   "fetched_at": "2026-11-10 11:02"
   },
   {
    "id": "uanalyze.com.tw:5258154070",
@@ -1611,6 +1842,124 @@
    "fetched_at": "2026-11-10 02:33"
   },
   {
+   "id": "digitimes.com.tw:0000762236_1NU17FBN4OKIOZ5P4TSW0",
+   "title": "台光電、台燿AI布局跑得快　南亞憑交期優勢成功卡位",
+   "date": "2026-07-20",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762236_1NU17FBN4OKIOZ5P4TSW0",
+   "summary": "隨著AI伺服器產品加速世代交替，對高頻高速傳輸提出更高要求，帶動PCB上游銅箔基板（CCL）材料升級趨勢確立，目前M7、M8級規格已成為市場主流，M9、M10級材料也進入測試驗證階段，有望於2027~2028年正式導入量產。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0720/762236-1-4tsw0_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "台燿",
+    "南亞"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:02"
+  },
+  {
+   "id": "digitimes.com.tw:0000760885_5DU9EIQJ70OF3X6MXWLG2",
+   "title": "中系CCL大廠建滔再發漲價函　部分產品調幅達15%",
+   "date": "2026-07-06",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000760885_5DU9EIQJ70OF3X6MXWLG2",
+   "summary": "AI伺服器與高速運算需求持續升溫，帶動PCB上游材料供應鏈漲價壓力進一步擴大。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0706/760885-1-xwlg2_l.png",
+   "paywall_hint": false,
+   "companies": [
+    "建滔"
+   ],
+   "topics": [
+    "漲價 / 報價",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000759228_Z6319LZZ3RO8W57ERH9QY",
+   "title": "高階玻纖布持續供不應求　Low CTE、Low Dk2看缺至2027",
+   "date": "2026-06-22",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000759228_Z6319LZZ3RO8W57ERH9QY",
+   "summary": "AI熱潮帶動高階玻纖布需求旺盛，隨著銅箔基板（CCL）客戶訂單湧入，全球前兩大供應商日東紡（Nittobo）、台玻產能維持供不應求，尤其Low CTE、Low Dk2產品「最缺」，供需缺口目前可一路看至2027年。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0622/759228-1-rh9qy_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-10 11:02"
+  },
+  {
+   "id": "digitimes.com.tw:0000758368_7H7263CB76C13C7JM3DN0",
+   "title": "HVLP4銅箔接棒T-glass玻纖布喊缺　NVIDIA親上PCB火線調料",
+   "date": "2026-06-11",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000758368_7H7263CB76C13C7JM3DN0",
+   "summary": "AI基建投資熱潮持續推升高階PCB需求，但上游銅箔基板（CCL）供應鏈瓶頸卻不斷浮現。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0611/758368-1-m3dn0_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000757992_Q3M8NDWFLXUS1F1OJAEM6",
+   "title": "HVLP4銅箔產能卡位戰升溫　NVIDIA跳過CCL廠招手金居",
+   "date": "2026-06-09",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757992_Q3M8NDWFLXUS1F1OJAEM6",
+   "summary": "金居6月8日召開股東會，董事長李思賢表示，不同於過往網通世代逐步升級，新一代AI GPU、特用晶片（ASIC）平台，正加速採用高階HVLP4銅箔，2026年7、8月將開始出現結構性供給瓶頸，預估2026全年供給缺口達15~25%，帶動未來2~3年進入價...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0609/757992-1-jaem6_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "銅箔廠"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000757750_7NM643OM64BG4FLETN80V",
+   "title": "騰輝獲外溢高速CCL訂單　5月營收連續3個月年增逾3成",
+   "date": "2026-06-04",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757750_7NM643OM64BG4FLETN80V",
+   "summary": "利基型銅箔基板（CCL）廠騰輝表示，5月營收維持成長腳步，主要受惠於高毛利航空航天聚醯亞胺（PI）材料需求持續熱絡，以及高速材料認證發酵開始量產，而不流膠PP片銷售額改寫歷史次高。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0604/757750-1-tn80v_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "騰輝"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
    "id": "uanalyze.com.tw:3345851616",
    "title": "聯茂法說｜訂單多到做不完，還有同業溢單！聯茂Q2營收看增20%，M7新料與AI ASIC雙引擎點火",
    "date": "2026-05-29",
@@ -1653,6 +2002,96 @@
    "fetched_at": "2026-11-10 02:23"
   },
   {
+   "id": "digitimes.com.tw:0000756638_R305ZIKO4UMESV7LJKBAL",
+   "title": "科技1分鐘：T-glass大缺貨　龍頭日東紡不喊漲",
+   "date": "2026-05-27",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756638_R305ZIKO4UMESV7LJKBAL",
+   "summary": "AI伺服器與運算需求超乎預期，引爆高階低熱膨脹（Low-CTE）玻纖布「T-glass」全球大缺貨，連NVIDIA執行長黃仁勳都曾親赴日本總部搶料。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0527/756638-1-jkbal_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000755705_Z2065I001VEKXO4L9629W",
+   "title": "亞電瞄準半導體與AI市場　啟動抗翹曲膜、PTFE材料送樣",
+   "date": "2026-05-18",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000755705_Z2065I001VEKXO4L9629W",
+   "summary": "軟性銅箔基板（FCCL）廠亞洲電材（以下簡稱亞電）表示，過去長期投入新產品研發已有所成果，2026年營運重心將轉往推廣與進行客戶送樣認證，其中，兩大主力新產品將分別搶攻半導體與AI應用市場，",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0518/755705-1-9629w_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "樹脂 / 添加劑"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000755031_6CUL6W5Q4U40UP0ABKSGW",
+   "title": "上緯航太複材與AI機器人貢獻營收　M8高階CCL材料瞄準AI伺服器市場",
+   "date": "2026-05-13",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000755031_6CUL6W5Q4U40UP0ABKSGW",
+   "summary": "上緯投控持續推動材料高值化，航太複材與AI機器人事業已開始貢獻營收，佔比分別達14%與4%。在高階電子材料方面，上緯表示，目前聚焦研發銅箔基板（CCL）M8材料，爭取切入AI伺服器供應鏈，現階段已進入客戶測試階段，但小批量出貨數量仍有限。<b...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0513/755031-1-bksgw_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
+   "id": "digitimes.com.tw:0000755006_X5SLGI0I1HWQ5M5SEFAFL",
+   "title": "卡位台廠PCB供應鏈海外產能腳步　斗山電子BG赴泰建CCL新廠",
+   "date": "2026-05-13",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000755006_X5SLGI0I1HWQ5M5SEFAFL",
+   "summary": "南韓銅箔基板（CCL）製造商斗山電子BG（Doosan Electronic Business Group）傳為供應與全球科技大廠合作的台灣PCB企業，將泰國定位為全球CCL核心生產據點，並已在當地建立工廠。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0513/755006-1-efafl_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
+   "id": "digitimes.com.tw:0000754724_6Y46FPBD3ZJKPZ3PUQHIJ",
+   "title": "AI引爆材料新賽局PCB產業迎雙重紅利　台廠搶當「第二來源」衝高階市場",
+   "date": "2026-05-08",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754724_6Y46FPBD3ZJKPZ3PUQHIJ",
+   "summary": "隨著AI運算帶動硬體規格的全面提升，全球PCB產業正迎來深度的結構性轉型。台灣電路板協會（TPCA）最新報告指出，在AI應用驅動下，2026年全球銅箔基板（CCL）市場將突破215億美元，年成長率上看34.2%。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0508/754724-1-uqhij_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP"
+   ],
+   "fetched_at": "2026-11-10 11:02"
+  },
+  {
    "id": "uanalyze.com.tw:9294451409",
    "title": "台光電(2383)飆破 4800 該下車了？「賣股 2 鐵則」必看！不敢買千金股... 達人欽點「這檔」不到百元獲利肉更多？",
    "date": "2026-05-06",
@@ -1672,6 +2111,45 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:32"
+  },
+  {
+   "id": "digitimes.com.tw:0000754150_TPB2RTVP44DHB81EMFM84",
+   "title": "CCL規格升級引發擴產潮　亞泰金屬2028年產能已售罄",
+   "date": "2026-05-05",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754150_TPB2RTVP44DHB81EMFM84",
+   "summary": "PCB迎來AI時代轉型，隨著高頻高速需求不斷升級，目前在上游銅箔基板（CCL）材料，M8等級已成為市場主流，且下世代M10方案也進入測試階段，無論對台灣或中國兩地業者來說，瞄準「高階產能」擴充均是當務之急。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0505/754150-1-mfm84_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-10 11:02"
+  },
+  {
+   "id": "digitimes.com.tw:0000753028_67C168V51NDZF89N7SDU4",
+   "title": "PCB廠搶材料產能拚AI財　卻陷兩大成本攀升壓力",
+   "date": "2026-04-24",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000753028_67C168V51NDZF89N7SDU4",
+   "summary": "隨著PCB規格與製程迎來升級潮，上游高階材料供貨日益緊缺，從IC載板用T-glass玻纖布供不應求，一路到下游銅箔基板（CCL）交期延長，同時帶動多項原物料齊聲發動漲勢。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0424/753028-1-7sdu4_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "漲價 / 報價",
+    "擴產 / 產能",
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-10 11:03"
   },
   {
    "id": "uanalyze.com.tw:9924650957",
@@ -1825,6 +2303,84 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:31"
+  },
+  {
+   "id": "digitimes.com.tw:0000748672_7225UONM8FHXVQ1P1DVNE",
+   "title": "AI伺服器訂單挹注華立前2月營收創新高　銅箔基板倍數成長",
+   "date": "2026-03-11",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000748672_7225UONM8FHXVQ1P1DVNE",
+   "summary": "AI伺服器、高效運算（HPC）和先進半導體需求持續增溫，帶動電子材料及設備需求，半導體材料設備供應商華立表示，2026年前2月累計營收創歷史新高。受惠AI伺服器訂單暢旺及800G交換器新產能陸續開出，銅箔基板相關業務營收呈現倍數成長。<br /...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0311/748672-1-1dvne_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000748027_VE519FG11OHQ398K0UDFE",
+   "title": "台虹轉型布局持續發酵　4Q25獲利暴增逾8倍",
+   "date": "2026-03-05",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000748027_VE519FG11OHQ398K0UDFE",
+   "summary": "軟性銅箔基板（FCCL）廠台虹表示，2025全年營收創近7年來新高，顯示三大新材料轉型布局逐漸發酵，在面板及鏡頭用細線路（fine-pitch）產品領頭衝鋒下，不僅第4季獲利出現逾8倍增長，而2026年1月獲利也接近倍增。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0305/748027-1-0udfe_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
+   "id": "digitimes.com.tw:0000747702_BCI83D0DLHM3PQ3FD1JLA",
+   "title": "IC載板用玻纖布嚴重短缺　MGC接棒Resonac喊漲CCL",
+   "date": "2026-03-04",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000747702_BCI83D0DLHM3PQ3FD1JLA",
+   "summary": "隨著NVIDIA、蘋果（Apple）等客戶需求湧入，IC載板用高階玻纖布供應持續短缺，帶動相關材料售價全面上漲，嚴重壓縮銅箔基板（CCL）供應商獲利空間，近期日廠已領頭啟動報價調升機制，將成本壓力轉嫁至下游客戶及終端市場。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0304/747702-1-d1jla_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "漲價 / 報價",
+    "AI 伺服器 / 交換器",
+    "CPO / 載板",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000747485_PM73ZLYH9GPCFM4D5WT50",
+   "title": "配合CCL客戶南向布局　富喬砸31億泰銖建泰國新廠",
+   "date": "2026-03-02",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000747485_PM73ZLYH9GPCFM4D5WT50",
+   "summary": "台灣玻纖紗、布一貫廠富喬宣布，通過泰國子公司資本支出計畫，預計斥資約31億元泰銖，投入泰國當地新廠建設計畫，預期2027年開出產能，配合已前進東南亞的下游銅箔基板（CCL）客戶布局。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0302/747485-1-5wt50_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "南亞",
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-10 11:04"
   },
   {
    "id": "uanalyze.com.tw:8423847306",
@@ -1982,6 +2538,70 @@
    "fetched_at": "2026-11-10 02:25"
   },
   {
+   "id": "digitimes.com.tw:0000740014_D271GBT90JNDBG5RRBBUN",
+   "title": "Rubin擬採含石英布M9級CCL　德宏：穩定送樣日本客戶中",
+   "date": "2025-12-04",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000740014_D271GBT90JNDBG5RRBBUN",
+   "summary": "PCB產業躍升成為AI算力隱形冠軍，帶動上游銅箔基板（CCL）升級至M9級（Extreme Low Loss+），也讓沈寂已久的石英布（Q-glass）材料開始獲得供應鏈關注。據了解，台灣第三大玻纖布廠德宏為目前台廠中，唯一具備石英纖維紗量產能力的廠商。<...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2025/1204/740014-1-rbbun_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:02"
+  },
+  {
+   "id": "digitimes.com.tw:0000738906_DFJ8F7WC1HTVCZ5YTK8QB",
+   "title": "台光電GB300運算托盤傳認證失利　斗山有望獨吃Rubin CCL訂單",
+   "date": "2025-11-21",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000738906_DFJ8F7WC1HTVCZ5YTK8QB",
+   "summary": "有消息傳出，由於競爭對手近期未能通過NVIDIA Blackwell GB300的品質驗證，南韓銅箔基板（CCL）大廠斗山電子BG（Doosan Electronic Business Group）在次世代產品Rubin上首次取得CCL獨家供應的可能性大幅提升...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2025/1121/738906-1-tk8qb_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "斗山"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
+   "id": "digitimes.com.tw:0000738403_44Q5Z0YOLTRDVA4M88UC6",
+   "title": "玻纖布、銅箔成AI兩大隱形瓶頸　台日PCB材料業者加急擴產",
+   "date": "2025-11-18",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000738403_44Q5Z0YOLTRDVA4M88UC6",
+   "summary": "AI伺服器需求浪潮來勢洶洶，繼日本玻纖布龍頭日東紡（Nittobo）一改以往的保守態度，公告將自2027年初起陸續開出現有的3倍「T-Glass」產能，同為日商的銅箔材料大廠三井金屬（Mitsui Mining & Smelting），也在過去不到1年內，三度上調...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2025/1118/738403-1-88uc6_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠",
+    "銅箔廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
    "id": "uanalyze.com.tw:6530038565",
    "title": "台燿前三季每股純益8.37元 40億元CB明天上櫃掛牌交易",
    "date": "2025-11-12",
@@ -2074,6 +2694,23 @@
    "fetched_at": "2026-11-10 02:31"
   },
   {
+   "id": "digitimes.com.tw:0000736032_ZX0L9M6U4C7FFU12W6GU0",
+   "title": "AI浪潮PCB上游材料「大缺貨」　關鍵業者台光電、金居現身說法",
+   "date": "2025-10-27",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000736032_ZX0L9M6U4C7FFU12W6GU0",
+   "summary": "全球AI基礎建設需求急速成長，除了先進半導體供應鏈、伺服器系統組裝供應鏈生意強強滾之外，PCB上游也應勢掀起供不應求聲浪，成為台灣電子業當中另一亮點。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2025/1027/736032-1-w6gu0_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "銅箔廠"
+   ],
+   "topics": [],
+   "fetched_at": "2026-11-10 11:02"
+  },
+  {
    "id": "uanalyze.com.tw:9162436551",
    "title": "〈熱門股〉聯茂持續高階材料布局 M9等級基板出貨蓄勢中 周漲10%",
    "date": "2025-10-24",
@@ -2148,6 +2785,65 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:32"
+  },
+  {
+   "id": "digitimes.com.tw:0000731319_S0N2QPJE2NNU9U8V0NF3M",
+   "title": "日廠擴產緩解CoWoS材料缺貨　台系玻纖布業者仍有挑戰",
+   "date": "2025-09-02",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000731319_S0N2QPJE2NNU9U8V0NF3M",
+   "summary": "近年來，生成式AI浪潮席捲全球，不僅推動AI伺服器市場規模高速增長，也讓晶圓代工大廠的CoWoS先進封裝產能，成為AI GPU、自研特用晶片（ASIC）客戶的兵家必爭之地。然而，其IC封裝載板的上游材料產能，卻讓以上兩大陣營為如期出貨而「搶破頭」。<b...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2025/0902/731319-1-0nf3m_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器",
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000731329_8MG2GKUE367XH78I3372S",
+   "title": "日東紡砸150億日圓擴產　T-Glass玻纖布產能2027倍增",
+   "date": "2025-09-01",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000731329_8MG2GKUE367XH78I3372S",
+   "summary": "日本玻纖布大廠日東紡（Nittobo）近日宣布，為因應AI伺服器客戶的龐大需求，集團預計斥資150億日圓（約新台幣31.26億元）擴建新廠，並增設高階玻纖布生產設施，最快將自2026會計年度第4季（截至2027年3月）起陸續投產。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2025/0901/731329-1-3372s_l.png",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
+   "id": "digitimes.com.tw:0000730729_S9O8TGVD1FUALSL2312JR",
+   "title": "客戶轉型金居順勢部分停產　聚焦特殊銅箔拚價量齊揚",
+   "date": "2025-08-26",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000730729_S9O8TGVD1FUALSL2312JR",
+   "summary": "受惠於AI伺服器需求增溫、5G高頻通訊新時代來臨，帶動銅箔基板（CCL）上游關鍵材料HVLP（高頻高速超低粗糙度反轉）系列銅箔產能供應吃緊，現階段僅日系大廠三井金屬（Mitsui Mining & Smelting）、台系利基型廠商金居為2大主流供應商。<b...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2025/0826/730729-1-312jr_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "銅箔廠"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:03"
   },
   {
    "id": "uanalyze.com.tw:1541626680",
@@ -2368,6 +3064,26 @@
    "fetched_at": "2026-11-10 02:24"
   },
   {
+   "id": "digitimes.com.tw:0000710583_EHR6YY3H78VA8B42SUBMJ",
+   "title": "斗山獨霸Blackwell CCL供應鏈　傳近日全面投產",
+   "date": "2024-12-20",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000710583_EHR6YY3H78VA8B42SUBMJ",
+   "summary": "傳南韓斗山電子（Doosan）近日開始全面生產，用於NVIDIA最新人工智慧（AI）加速器Blackwell的銅箔基板（CCL），不但展現其在高階CCL領域的領先地位，也躍升成為NVIDIA AI價值鏈中的核心。另外，也有分析指出，斗山很可能持續在NVI...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2024/1220/710583-1-submj1004_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
    "id": "uanalyze.com.tw:492837815",
    "title": "教學｜掌握公司下一季展望！以六暉、台光電為例，用數據洞察訂單能見度",
    "date": "2024-11-06",
@@ -2521,6 +3237,25 @@
     "AI 伺服器 / 交換器"
    ],
    "fetched_at": "2026-11-10 02:23"
+  },
+  {
+   "id": "digitimes.com.tw:0000693743_MR28EDEO38205C4L5QLVF",
+   "title": "斗山集團2H24正式供應NVIDIA CCL",
+   "date": "2024-06-12",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000693743_MR28EDEO38205C4L5QLVF",
+   "summary": "隨著AI晶片市場擴張，製造核心材料銅箔基板（CCL）的斗山集團（Doosan Group）業績有望跟著看漲。吸引外界目光的是，斗山集團已開始為NVIDIA量產新一代GPU用的CCL，預計2024年下半正式供貨。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2024/0612/693743-1-5qlvf_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:04"
   },
   {
    "id": "uanalyze.com.tw:675185318",
@@ -2688,6 +3423,43 @@
    "fetched_at": "2026-11-10 02:32"
   },
   {
+   "id": "digitimes.com.tw:0000670496_OXJ54TJ38M8OJV7SCXOM9",
+   "title": "NVIDIA AI加速器用CCL　傳由南韓斗山供應",
+   "date": "2023-08-03",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000670496_OXJ54TJ38M8OJV7SCXOM9",
+   "summary": "南韓斗山集團（Doosan Group）傳將向全球影像處理器（GPU）龍頭NVIDIA供應AI加速器核心材料銅箔基板（CCL），高階CCL的技術實力獲得認可。近期也持續擴大CCL事業投資，以應對快速成長的AI市場。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2023/0803/670496-1-cxom9_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-10 11:04"
+  },
+  {
+   "id": "digitimes.com.tw:663572",
+   "title": "CCL廠短期迎逆風　看好AI伺服器成長動能",
+   "date": "2023-05-10",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=663572",
+   "summary": "台系CCL廠第1季完整營收皆已出爐，整體在第1季市場需求疲弱影響下，較2022年衰退不少，不過3月工作天數增加，普遍還是呈現月增的情形。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2023/0510/663572-1-oaaj3_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "AI 伺服器 / 交換器",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-10 11:02"
+  },
+  {
    "id": "uanalyze.com.tw:816083172",
    "title": "台光電(2383)Q1財報差，是否該忽視短期的衰退，放眼未來發展潛力？",
    "date": "2023-04-26",
@@ -2744,6 +3516,99 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:33"
+  },
+  {
+   "id": "digitimes.com.tw:0000619612_KU650RQF2UQSME1U6EMZP",
+   "title": "4Q21銅箔加工費續高　2022高低階走法可能分歧",
+   "date": "2021-09-24",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000619612_KU650RQF2UQSME1U6EMZP",
+   "summary": "PCB上游材料的價格走勢與供需狀況，一直是CCL、PCB廠2021年關心的焦點，其中又以銅箔為重中之重，一是銅價近一年多來漲幅不小；二是供給面受限於源於日商的關鍵生產設備之長交期，一直跟不上爆炸式成長的終端需求。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2021/0924/619612-1-6emzp.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "漲價 / 報價"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000589725_TP86G4Z53TXDRU4M2P9TF",
+   "title": "日東紡玻纖布恐陷短缺　CCL供應鏈面臨成本提升風險",
+   "date": "2020-07-22",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000589725_TP86G4Z53TXDRU4M2P9TF",
+   "summary": "日系玻纖布龍頭大廠日東紡(Nittobo)福島第二工廠於20日傳出火警，日東紡的Low-Dk玻纖布產品在全球5G高頻高速PCB供應鏈中佔據龍頭地位，在多數基地台所需的PCB板中都看得到日東紡的影子，這次事故對相關供應鏈來說，勢必會帶來供貨及成本上的壓力。<...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2020/0722/589725-1-2p9tf.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000588658_1UL7Q8GD4S7F219S0K35I",
+   "title": "需求爆發但產能上限已至　台CCL廠急需擴產拉抬成長",
+   "date": "2020-07-07",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000588658_1UL7Q8GD4S7F219S0K35I",
+   "summary": "台系銅箔基板(CCL)三雄針對高頻高速產品技術的投入，在近一兩年逐步修成正果，無論是長期耕耘的台燿、力拚彎道超車的聯茂、還是在手機材料佔據龍頭寶座的台光電，都感受到高頻高速CCL市場需求的蓬勃成長。然在疫情帶來的宅經濟需求浮現之下，2020年高頻高速材料成長...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2020/0707/588658-1-0k35i.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "台燿",
+    "聯茂"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-10 11:02"
+  },
+  {
+   "id": "digitimes.com.tw:0000588179_BAO211SF69BFLZLPNOJV0",
+   "title": "CCL龍頭建滔啟動漲價　台系PCB業者淡定以對",
+   "date": "2020-06-30",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000588179_BAO211SF69BFLZLPNOJV0",
+   "summary": "全球CCL龍頭大廠建滔近日發出最新通知，表示為了因應銅價及其他原材料的價格提升，將在7月針對部分CCL產品調漲價格3~5%，市場龍頭大動作調漲也讓外界高度關注其他CCL業者是否會一致跟進，進而對下半年PCB產業的成本因素帶來變化。<br /...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2020/0630/588179-1-nojv0.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "建滔"
+   ],
+   "topics": [
+    "漲價 / 報價"
+   ],
+   "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "digitimes.com.tw:0000587987_46I8WTAZ9DVTEG61I1I4O",
+   "title": "Panasonic中國擴產計畫拍板　高頻高速CCL資本競爭越烈",
+   "date": "2020-06-24",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000587987_46I8WTAZ9DVTEG61I1I4O",
+   "summary": "日本銅箔基板(CCL)大廠Panasonic計劃在中國大陸廣東擴產，投資額度約為80億日圓(7,500萬美元)，預計產能將提高至現在的1.5倍，並於2021年下半旺季開出產能。外界猜測，Panasonic在中國擴充產能是為了滿足中國5G基礎建設的高頻高速材料需求，...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2020/0624/587987-1-i1i4o.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "松下"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-10 11:02"
   }
  ]
 }
