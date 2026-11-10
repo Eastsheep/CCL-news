@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10 11:04",
+ "updated_at": "2026-11-10 11:06",
  "sources": [
   "DIGITIMES",
   "優分析"
@@ -1331,6 +1331,24 @@
    "fetched_at": "2026-11-10 02:25"
   },
   {
+   "id": "digitimes.com.tw:0000768724_QTS6SP3O30GQCS39BVJBI",
+   "title": "南亞AI電子材料轉型增速　大手筆擴產打通垂直供應鏈",
+   "date": "2026-09-17",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000768724_QTS6SP3O30GQCS39BVJBI",
+   "summary": "雲端服務供應（CSP）大廠對未來算力需求樂觀，以驚人的速度擴張資本支出，其中PCB材料更成為AI硬體效能提升關鍵，南亞集團電子材料產品轉型布局加速，切入高階AI及週邊供應鏈逐步收效。",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0917/768724-1-bvjbi_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "南亞"
+   ],
+   "topics": [
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-10 11:06"
+  },
+  {
    "id": "uanalyze.com.tw:1097055461",
    "title": "AI伺服器下一個缺貨材料？這塊「布」價格近翻倍，輝達M9升級打開新需求",
    "date": "2026-09-16",
@@ -1667,6 +1685,43 @@
     "擴產 / 產能"
    ],
    "fetched_at": "2026-11-10 02:25"
+  },
+  {
+   "id": "digitimes.com.tw:0000765418_AVI5TYBZ0429S999X3HHW",
+   "title": "三井金屬再加碼增產AI資料中心用銅箔　2033年度增至2.4倍",
+   "date": "2026-08-18",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000765418_AVI5TYBZ0429S999X3HHW",
+   "summary": "三井金屬（Mitsui Kinzoku Company）最新宣布，用於人工智慧（AI）資料中心等用途的極薄銅箔產量，至2033年度（2033/4~2034/3），將增加到2025年度的2.4倍以上。三井金屬8月7日才剛公布一項延續至2030年度的增產計畫，如今又因...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0818/765418-1-x3hhw_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "銅箔廠"
+   ],
+   "topics": [
+    "銅箔 / HVLP"
+   ],
+   "fetched_at": "2026-11-10 11:06"
+  },
+  {
+   "id": "digitimes.com.tw:0000764550_UZT62PND4V0OND1X0QYRV",
+   "title": "三井金屬砸420億日圓擴產　瞄準AI資料中心高階銅箔需求",
+   "date": "2026-08-10",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000764550_UZT62PND4V0OND1X0QYRV",
+   "summary": "日本三井金屬（Mitsui Kinzoku Company）宣布，將於2030年度（2030/4~2031/3）結束前投入總額420億日圓（約2.66億美元），增產用於人工智慧（AI）資料中心等領域的多款高階銅箔產品，並已開始評估針對2035年前後的市場需求進行新...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/0810/764550-1-0qyrv_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "銅箔廠"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-10 11:06"
   },
   {
    "id": "uanalyze.com.tw:8972053001",
