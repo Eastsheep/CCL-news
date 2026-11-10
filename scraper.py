@@ -160,6 +160,18 @@ def _meta(soup, *names):
     return ""
 
 
+def _image(soup, url):
+    """文章代表圖：只記錄原網站的圖片網址，網頁顯示時直接連回原站，不另外下載保存。"""
+    img = _meta(soup, "og:image", "twitter:image", "image")
+    if not img:
+        return ""
+    img = urljoin(url, img)
+    # 排除網站預設 logo（不是這篇文章的圖）
+    if re.search(r"(logo|default|share_?img|og_?image_?default)", img, re.I):
+        return ""
+    return img
+
+
 def parse_date(soup, html):
     raw = _meta(soup, "article:published_time", "pubdate", "publishdate", "date", "datePublished")
     for src in ([raw] if raw else []) + [t.get_text(" ", strip=True) for t in soup.find_all(["time", "span", "div"], class_=re.compile("date|time", re.I))][:5] + [html]:
@@ -198,6 +210,7 @@ def parse_article(url, html):
         "summary": summary,
         "source": source_of(url)["name"],
         "author": _meta(soup, "author", "article:author"),
+        "image": _image(soup, url),
         "paywall_hint": paywall,
     }
 
@@ -245,6 +258,8 @@ def run():
             candidates.update(kept)
 
     new = [u for u in candidates if item_key(u) and item_key(u) not in existing]
+    # 舊資料還沒有圖片欄位的，順便補抓（新文章優先）
+    new += [n["url"] for n in existing.values() if "image" not in n]
     log(f"[info] 候選 {len(candidates)} 篇，新文章 {len(new)} 篇（本次最多抓 {config.MAX_ARTICLES_PER_RUN}）")
     for url in new[: config.MAX_ARTICLES_PER_RUN]:
         html = fetch(url)
@@ -256,7 +271,7 @@ def run():
             log(f"[drop] 不相關：{item['title'][:40]}")
             continue
         item["companies"], item["topics"] = classify(text)
-        item["fetched_at"] = datetime.now(TW).strftime("%Y-%m-%d %H:%M")
+        item["fetched_at"] = existing.get(item["id"], {}).get("fetched_at") or datetime.now(TW).strftime("%Y-%m-%d %H:%M")
         existing[item["id"]] = item
         log(f"[ok] {item['date']} {item['title'][:50]}")
 

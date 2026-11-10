@@ -37,8 +37,12 @@ input[type=search],select{width:100%;padding:8px 10px;border:1px solid var(--lin
 .group{margin-bottom:22px}
 .group h2{font-size:16px;margin:0 0 10px;display:flex;align-items:baseline;gap:8px}
 .group h2 .n{color:var(--muted);font-size:13px;font-weight:400}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.card{display:flex;gap:14px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
 .dt{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:4px;padding:1px 8px;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.card .body{flex:1;min-width:0}
+.thumb{flex:0 0 168px;order:2;display:block;border-radius:8px;overflow:hidden;background:var(--chip);aspect-ratio:16/10}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:560px){.card{flex-direction:column}.thumb{order:0;flex:none;width:100%;aspect-ratio:16/8}}
 .card a.t{display:block;color:var(--text);text-decoration:none;font-weight:600;font-size:15px}
 .card a.t:hover{color:var(--accent);text-decoration:underline}
 .meta{color:var(--muted);font-size:12px;margin:2px 0 6px}
@@ -139,13 +143,14 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
   }
 
   function card(n){
-    return `<div class="card">
+    const img = n.image ? `<a class="thumb" href="${esc(n.url)}" target="_blank" rel="noopener"><img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>` : "";
+    return `<div class="card">${img}<div class="body">
       <div class="dt">${n.date ? esc(n.date.replace(/-/g, "/")) : "日期待抓取"}</div>
       <a class="t" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
       <div class="meta">${esc(n.source)}${n.author && n.author !== n.source ? "／" + esc(n.author) : ""}${n.paywall_hint ? '<span class="pay">摘要需訂閱，請看原文</span>' : ""}</div>
       ${n.summary ? `<p class="sum">${esc(n.summary)}</p>` : ""}
       <div class="tags">${n.companies.map(c=>`<span class="tag c">${esc(c)}</span>`).join("")}${n.topics.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
-    </div>`;
+    </div></div>`;
   }
 
   function render(){
