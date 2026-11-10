@@ -139,7 +139,7 @@ footer{color:var(--muted);font-size:12px;padding:30px 0}
     return `<div class="card">
       <div class="dt">${n.date ? esc(n.date.replace(/-/g, "/")) : "日期待抓取"}</div>
       <a class="t" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
-      <div class="meta">${esc(n.source)}${n.author && n.author !== n.source ? "／" + esc(n.author) : ""}${n.paywall_hint ? '<span class="pay">可能需訂閱</span>' : ""}</div>
+      <div class="meta">${esc(n.source)}${n.author && n.author !== n.source ? "／" + esc(n.author) : ""}${n.paywall_hint ? '<span class="pay">摘要需訂閱，請看原文</span>' : ""}</div>
       ${n.summary ? `<p class="sum">${esc(n.summary)}</p>` : ""}
       <div class="tags">${n.companies.map(c=>`<span class="tag c">${esc(c)}</span>`).join("")}${n.topics.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
     </div>`;

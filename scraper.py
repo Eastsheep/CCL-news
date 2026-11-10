@@ -185,7 +185,9 @@ def parse_article(url, html):
                 summary = t
                 break
     summary = re.sub(r"\s+", " ", summary)[:300]
-    paywall = bool(re.search(r"(訂閱|付費|會員專屬|登入.*閱讀|加入會員)", html[:200000])) and len(summary) < 80
+    if re.search(r"(會員登入|忘記密碼|帳號啟用|記住帳號)", summary):
+        summary = ""   # 抓到的是登入框文字，不是摘要
+    paywall = not summary
     return {
         "id": item_key(url),
         "title": title,
@@ -254,6 +256,15 @@ def run():
         item["fetched_at"] = datetime.now().strftime("%Y-%m-%d %H:%M")
         existing[item["id"]] = item
         log(f"[ok] {item['date']} {item['title'][:50]}")
+
+    # 同來源同標題只留一則（同一篇文章可能有多個網址）
+    seen = {}
+    for key, item in sorted(existing.items(), key=lambda kv: kv[1].get("summary", "") == ""):
+        sig = (item["source"], re.sub(r"\s+", "", item["title"]))
+        if sig in seen:
+            del existing[key]
+        else:
+            seen[sig] = key
 
     # 設定檔改過後，舊資料也重新分類
     for item in existing.values():

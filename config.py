@@ -3,7 +3,7 @@
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 CCLNewsBot/0.1 (internal research)"
 REQUEST_DELAY_SEC = 3.0      # 每次請求間隔，避免造成對方負擔
-MAX_ARTICLES_PER_RUN = 60    # 每次最多抓幾篇文章內頁
+MAX_ARTICLES_PER_RUN = 150   # 每次最多抓幾篇文章內頁
 TIMEOUT_SEC = 20
 
 # ── 新聞來源 ────────────────────────────────────────────
@@ -19,9 +19,14 @@ SOURCES = [
     {
         "name": "DIGITIMES",
         "domain": "digitimes.com.tw",
-        "list_pages": ["https://www.digitimes.com.tw/"],
-        "search_pages": ["https://www.digitimes.com.tw/tech/searchdomain/srchlst_main.asp?query={q}"],
-        "search_terms": ["銅箔基板", "CCL", "台光電", "台燿", "聯茂", "玻纖布", "HVLP", "低介電"],
+        # DIGITIMES 站內搜尋是 JavaScript 動態載入，全部新聞列表需要登入，所以只抓首頁與
+        # 「半導體．零組件」頻道（CCL 新聞歸在這裡），每天累積；種子文章補歷史資料。
+        "list_pages": [
+            "https://www.digitimes.com.tw/",
+            "https://www.digitimes.com.tw/tech/industries/?CnlID=1&cat=40",
+        ],
+        "search_pages": [],
+        "search_terms": [],
         "article_re": r"shwnws\.asp\?[^\"'#\s]*id=([0-9A-Za-z_]+)",
         "canonical": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id={id}",
         "seeds": [

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10 02:26",
+ "updated_at": "2026-11-10 02:29",
  "sources": [
   "DIGITIMES",
   "優分析"
@@ -34,26 +34,10 @@
    "title": "NVIDIA看上鐵氟龍！　解密AI伺服器的PTFE與永久化學迷思",
    "date": "2026-11-10",
    "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=774075",
-   "summary": "... 會員登入 【範例：user@company.com】 忘記密碼 | 重寄啟用信 記住帳號密碼 登入 ★ 若您是第一次使用會員資料庫，請先點選 【帳號啟用】 會員服務申請/試用 試用申請 產業研究諮詢 會員服務介紹 常見問題 申請專線： +886-02-87125398。 (週一至週五工作日9:00~18:00) 會員信箱： member@digitimes.com (一個工作日內將回覆您的來信) 訂閱DIGITIMESWeekly 會員服務申請/試用 申請專線： +886-02-87125398。 (週一至週五工作日9:00~18:00) 會員信箱： member@digitimes.",
+   "summary": "",
    "source": "DIGITIMES",
    "author": "",
-   "paywall_hint": false,
-   "companies": [],
-   "topics": [
-    "樹脂 / 添加劑",
-    "AI 伺服器 / 交換器"
-   ],
-   "fetched_at": "2026-11-10 02:23"
-  },
-  {
-   "id": "digitimes.com.tw:0000774075_Y8D1XGOC69SUG96447NED",
-   "title": "NVIDIA看上鐵氟龍！　解密AI伺服器的PTFE與永久化學迷思",
-   "date": "2026-11-10",
-   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774075_Y8D1XGOC69SUG96447NED",
-   "summary": "... 會員登入 【範例：user@company.com】 忘記密碼 | 重寄啟用信 記住帳號密碼 登入 ★ 若您是第一次使用會員資料庫，請先點選 【帳號啟用】 會員服務申請/試用 試用申請 產業研究諮詢 會員服務介紹 常見問題 申請專線： +886-02-87125398。 (週一至週五工作日9:00~18:00) 會員信箱： member@digitimes.com (一個工作日內將回覆您的來信) 訂閱DIGITIMESWeekly 會員服務申請/試用 申請專線： +886-02-87125398。 (週一至週五工作日9:00~18:00) 會員信箱： member@digitimes.",
-   "source": "DIGITIMES",
-   "author": "",
-   "paywall_hint": false,
+   "paywall_hint": true,
    "companies": [],
    "topics": [
     "樹脂 / 添加劑",
@@ -597,7 +581,7 @@
    "summary": "聯茂(6213)Q2毛利率升至22.02%，M7規格升級帶動獲利跳升，M9通過美系GPU大廠認證、2027年放量，AI伺服器與ASIC需求成成長動能。",
    "source": "優分析",
    "author": "",
-   "paywall_hint": true,
+   "paywall_hint": false,
    "companies": [
     "聯茂"
    ],
@@ -715,7 +699,7 @@
    "summary": "銅箔基板（CCL）大廠台光電表示，受惠於AI產品高階材料強勁需求，2026年第2季產能維持滿載，帶動單季營收獲利表現，同步改寫單季新高。",
    "source": "DIGITIMES",
    "author": "",
-   "paywall_hint": true,
+   "paywall_hint": false,
    "companies": [
     "台光電"
    ],
@@ -1093,7 +1077,7 @@
    "summary": "上一篇談到了台灣的CCL龍頭廠商，台光電(2383)，而在台灣，還有另外一間很重要的CCL廠商台燿(6274)。",
    "source": "優分析",
    "author": "",
-   "paywall_hint": true,
+   "paywall_hint": false,
    "companies": [
     "台光電",
     "台燿"
@@ -1111,7 +1095,7 @@
    "summary": "上一篇談到ASIC已經成為了伺服器領域的重要發展方向，且CSP廠都在朝這方向去發展，AWS Trainium 2就是一個案例。",
    "source": "優分析",
    "author": "",
-   "paywall_hint": true,
+   "paywall_hint": false,
    "companies": [
     "台光電"
    ],
@@ -1149,7 +1133,7 @@
    "summary": "生活中愈來愈多AI應用，反映AI需求高漲，帶動AI伺服器商機。其中，銅箔基板（CCL）大廠台光電、聯茂、台燿受此趨勢有正面影響，迎接下半年傳統旺季。",
    "source": "DIGITIMES",
    "author": "",
-   "paywall_hint": true,
+   "paywall_hint": false,
    "companies": [
     "台光電",
     "台燿",
