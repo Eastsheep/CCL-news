@@ -3,103 +3,171 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CCL 產業新聞</title>
+<title>CCL 產業情報</title>
+<meta name="description" content="銅箔基板（CCL）產業新聞每日自動彙整：台光電、台燿、聯茂、南亞、M7/M8/M9、玻纖布、HVLP 銅箔。">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f6f7f9; --panel:#ffffff; --text:#1c2430; --muted:#5f6b7a; --line:#e3e7ec;
-  --accent:#0f6e6e; --accent-soft:#e3f1f0; --chip:#eef1f4; --warn:#a15c00;
+  --bg:#f3f5f8; --panel:#ffffff; --text:#14202b; --muted:#5d6b79; --faint:#8a97a4; --line:#e2e7ec;
+  --navy:#10263a; --navy-2:#173651; --accent:#b5622a; --accent-soft:#f8ece3; --accent-text:#9a4f1d;
+  --chip:#eef1f5; --warn:#a15c00; --shadow:0 1px 2px rgba(16,38,58,.06),0 4px 14px rgba(16,38,58,.06);
 }
 @media (prefers-color-scheme: dark){
-  :root{ --bg:#12161b; --panel:#1a2027; --text:#e6eaef; --muted:#97a3b1; --line:#2a323c;
-    --accent:#4fb8b0; --accent-soft:#1d3433; --chip:#242b34; --warn:#e0a24a; }
+  :root:not([data-theme="light"]){
+    --bg:#0c131a; --panel:#141d26; --text:#e7edf3; --muted:#9aa8b6; --faint:#6f7e8c; --line:#233140;
+    --navy:#0a1824; --navy-2:#122b40; --accent:#e08a4f; --accent-soft:#3a2618; --accent-text:#f0a877;
+    --chip:#1c2733; --warn:#e0a24a; --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0c131a; --panel:#141d26; --text:#e7edf3; --muted:#9aa8b6; --faint:#6f7e8c; --line:#233140;
+  --navy:#0a1824; --navy-2:#122b40; --accent:#e08a4f; --accent-soft:#3a2618; --accent-text:#f0a877;
+  --chip:#1c2733; --warn:#e0a24a; --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.55}
-header{background:var(--panel);border-bottom:1px solid var(--line);padding:18px 16px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
-h1{font-size:22px;margin:0 0 4px}
-.sub{color:var(--muted);font-size:13px}
-.layout{display:grid;grid-template-columns:250px 1fr;gap:20px;margin-top:20px}
-@media (max-width:820px){.layout{grid-template-columns:1fr}}
-aside{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;align-self:start;position:sticky;top:12px}
-@media (max-width:820px){aside{position:static}}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.6;
+  font-family:"Noto Sans TC",-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei",sans-serif}
+button,input,select{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+
+/* 頁首 */
+header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;padding:26px 0 64px;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;inset:auto -80px -120px auto;width:420px;height:260px;
+  background:repeating-linear-gradient(0deg,rgba(224,138,79,.10) 0 10px,transparent 10px 22px);transform:rotate(-8deg);pointer-events:none}
+.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:1}
+.brand img{width:52px;height:52px;border-radius:12px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+.brand h1{font-size:24px;line-height:1.25;margin:0;font-weight:700;letter-spacing:.02em}
+.brand h1 small{display:block;font-size:13px;font-weight:400;color:#b9c8d6;letter-spacing:.04em;margin-top:2px}
+.updated{position:relative;z-index:1;margin-top:14px;font-size:12.5px;color:#b9c8d6}
+.updated b{color:#ffd7b5;font-weight:500}
+
+/* 統計卡 */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:-40px;position:relative;z-index:2}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.stat .k{font-size:12.5px;color:var(--muted)}
+.stat .v{font-size:26px;font-weight:700;line-height:1.2;margin-top:2px;font-variant-numeric:tabular-nums}
+.stat .v small{font-size:13px;font-weight:500;color:var(--muted);margin-left:4px}
+.stat .v.word{font-size:20px;padding-top:4px}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.stat .v{font-size:22px}}
+
+/* 工具列 */
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:22px 0 16px}
+.search{flex:1 1 280px;position:relative}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--faint)}
+.search input{width:100%;height:42px;padding:0 14px 0 36px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:15px;box-shadow:var(--shadow)}
+.search input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+.btn{height:42px;padding:0 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:14px;box-shadow:var(--shadow)}
+.btn:hover{border-color:var(--accent)}
+.btn .n{min-width:20px;height:20px;padding:0 6px;border-radius:10px;background:var(--accent);color:#fff;font-size:12px;display:inline-flex;align-items:center;justify-content:center}
+.seg{display:inline-flex;background:var(--chip);border-radius:10px;padding:3px;gap:2px}
+.seg button{height:36px;padding:0 14px;border:0;border-radius:8px;background:transparent;cursor:pointer;font-size:14px;color:var(--muted)}
+.seg button.on{background:var(--panel);color:var(--text);font-weight:500;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+
+/* 版面 */
+.layout{display:grid;grid-template-columns:264px 1fr;gap:20px;align-items:start}
 body.nofilter .layout{grid-template-columns:1fr}
 body.nofilter aside{display:none}
-.tab.ftoggle{margin-right:6px}
-.tab.ftoggle::before{content:"▾ ";font-size:11px}
-body.nofilter .tab.ftoggle::before{content:"▸ "}
-.tab.ftoggle .n{display:inline-block;min-width:18px;margin-left:4px;padding:0 5px;border-radius:9px;background:var(--accent);color:#fff;font-size:11px}
-aside h3{font-size:13px;color:var(--muted);margin:14px 0 8px;font-weight:600}
+@media (max-width:860px){.layout{grid-template-columns:1fr}}
+aside{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;position:sticky;top:14px;box-shadow:var(--shadow);max-height:calc(100vh - 28px);overflow:auto}
+@media (max-width:860px){aside{position:static;max-height:none}}
+aside h3{font-size:12.5px;color:var(--muted);margin:18px 0 8px;font-weight:500;letter-spacing:.06em}
 aside h3:first-child{margin-top:0}
-input[type=search],select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);font-size:14px}
+select{width:100%;height:38px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{border:1px solid var(--line);background:var(--chip);color:var(--text);border-radius:999px;padding:3px 10px;font-size:13px;cursor:pointer}
+.chip{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:3px 10px;font-size:13px;cursor:pointer;line-height:1.5}
+.chip:hover{border-color:var(--accent)}
 .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
-.chip .n{opacity:.65;margin-left:4px;font-size:12px}
-.tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
-.tab{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:6px 14px;border-radius:8px;cursor:pointer;font-size:14px}
-.tab.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
-.group{margin-bottom:22px}
-.group h2{font-size:16px;margin:0 0 10px;display:flex;align-items:baseline;gap:8px}
-.group h2 .n{color:var(--muted);font-size:13px;font-weight:400}
-.card{display:flex;gap:14px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
-.dt{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:4px;padding:1px 8px;margin-bottom:6px;font-variant-numeric:tabular-nums}
-.card .body{flex:1;min-width:0}
-.thumb{flex:0 0 168px;order:2;display:block;border-radius:8px;overflow:hidden;background:var(--chip);aspect-ratio:16/10}
+.chip .n{opacity:.6;margin-left:4px;font-size:11.5px;font-variant-numeric:tabular-nums}
+.chip.zero{opacity:.45}
+.clear{margin-top:16px;font-size:13px;color:var(--accent-text);background:none;border:none;cursor:pointer;padding:0}
+
+/* 新聞列表 */
+.group{margin-bottom:26px}
+.group h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:10px;color:var(--text)}
+.group h2::before{content:"";width:4px;height:16px;border-radius:2px;background:var(--accent)}
+.group h2 .n{color:var(--faint);font-size:12.5px;font-weight:400}
+.card{display:flex;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px;transition:border-color .15s,box-shadow .15s,transform .15s}
+.card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line));box-shadow:var(--shadow);transform:translateY(-1px)}
+.thumb{flex:0 0 184px;display:block;border-radius:9px;overflow:hidden;background:var(--chip);aspect-ratio:16/10;align-self:flex-start}
 .thumb img{width:100%;height:100%;object-fit:cover;display:block}
-@media (max-width:560px){.card{flex-direction:column}.thumb{order:0;flex:none;width:100%;aspect-ratio:16/8}}
-.card a.t{display:block;color:var(--text);text-decoration:none;font-weight:600;font-size:15px}
-.card a.t:hover{color:var(--accent);text-decoration:underline}
-.meta{color:var(--muted);font-size:12px;margin:2px 0 6px}
-.sum{font-size:14px;margin:0 0 8px}
-.tags{display:flex;flex-wrap:wrap;gap:4px}
-.tag{font-size:12px;padding:1px 8px;border-radius:4px;background:var(--chip);color:var(--muted)}
-.tag.c{background:var(--accent-soft);color:var(--accent)}
-.pay{color:var(--warn);font-size:12px;margin-left:6px}
-.empty{color:var(--muted);padding:30px;text-align:center}
-.clear{margin-top:14px;font-size:13px;color:var(--accent);background:none;border:none;cursor:pointer;padding:0}
-footer{color:var(--muted);font-size:12px;padding:30px 0}
+.card .body{flex:1;min-width:0}
+.top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-bottom:4px}
+.dt{font-weight:500;color:var(--accent-text);font-variant-numeric:tabular-nums}
+.src{display:inline-flex;align-items:center;gap:5px}
+.src::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--faint)}
+.src.dg::before{background:#3d7cc9}.src.ua::before{background:#2f9e6e}
+.pay{color:var(--warn)}
+.card a.t{display:block;color:var(--text);text-decoration:none;font-weight:700;font-size:16px;line-height:1.45}
+.card a.t:hover{color:var(--accent-text)}
+.sum{font-size:14px;color:var(--muted);margin:6px 0 10px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:12px;padding:1px 8px;border-radius:5px;background:var(--chip);color:var(--muted)}
+.tag.c{background:var(--accent-soft);color:var(--accent-text);font-weight:500}
+@media (max-width:600px){
+  .card{flex-direction:column;gap:10px;padding:12px}
+  .thumb{flex:none;width:100%;aspect-ratio:16/8}
+  .brand h1{font-size:21px}
+}
+.empty{color:var(--muted);padding:48px 16px;text-align:center;background:var(--panel);border:1px dashed var(--line);border-radius:12px}
+.loading{padding:48px 16px;text-align:center;color:var(--muted)}
+footer{color:var(--faint);font-size:12px;padding:28px 0 36px;border-top:1px solid var(--line);margin-top:20px}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <h1>CCL 產業新聞</h1>
-  <div class="sub" id="sub">載入中…</div>
-</div></header>
-
-<div class="wrap layout">
-  <aside>
-    <h3>關鍵字搜尋</h3>
-    <input type="search" id="q" placeholder="例：M9、玻纖布、擴產">
-    <h3>期間</h3>
-    <select id="range">
-      <option value="7">最近 7 天</option>
-      <option value="30">最近 30 天</option>
-      <option value="90" selected>最近 90 天</option>
-      <option value="365">最近一年</option>
-      <option value="0">全部</option>
-    </select>
-    <h3>來源</h3>
-    <div class="chips" id="fs"></div>
-    <h3>公司</h3>
-    <div class="chips" id="fc"></div>
-    <h3>主題</h3>
-    <div class="chips" id="ft"></div>
-    <button class="clear" id="clear">清除篩選</button>
-  </aside>
-
-  <main>
-    <div class="tabs" id="tabs">
-      <button class="tab ftoggle" id="ftoggle" type="button" aria-expanded="true">篩選</button>
-      <button class="tab on" data-v="time">依時間</button>
-      <button class="tab" data-v="company">依公司</button>
-      <button class="tab" data-v="topic">依主題</button>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo.svg" alt="">
+      <h1>CCL 產業情報<small>銅箔基板產業新聞・每日自動彙整</small></h1>
     </div>
-    <div id="list"></div>
-  </main>
+    <div class="updated" id="sub">資料載入中…</div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="stats" id="stats" aria-label="新聞統計"></section>
+
+  <div class="toolbar">
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="q" placeholder="搜尋標題或摘要，例如 M9、玻纖布、擴產" aria-label="搜尋">
+    </label>
+    <button class="btn" id="ftoggle" type="button" aria-expanded="true">篩選</button>
+    <div class="seg" id="tabs" role="tablist">
+      <button class="on" data-v="time">依時間</button>
+      <button data-v="company">依公司</button>
+      <button data-v="topic">依主題</button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <aside>
+      <h3>期間</h3>
+      <select id="range" aria-label="期間">
+        <option value="7">最近 7 天</option>
+        <option value="30">最近 30 天</option>
+        <option value="90" selected>最近 90 天</option>
+        <option value="365">最近一年</option>
+        <option value="0">全部</option>
+      </select>
+      <h3>來源</h3>
+      <div class="chips" id="fs"></div>
+      <h3>公司</h3>
+      <div class="chips" id="fc"></div>
+      <h3>主題</h3>
+      <div class="chips" id="ft"></div>
+      <button class="clear" id="clear">清除所有篩選</button>
+    </aside>
+
+    <main><div id="list" class="loading">載入中…</div></main>
+  </div>
+
+  <footer>資料來源：DIGITIMES、優分析的公開標題與摘要，全文請點連結至原網站閱讀。圖片連結自原網站。本頁僅供內部研究使用。</footer>
 </div>
-<div class="wrap"><footer>資料來源：DIGITIMES、優分析 公開標題與摘要，全文請點連結至原網站閱讀。本頁僅供內部研究使用。</footer></div>
 
 <script src="news.js" onerror="void 0"></script>
 <script>
@@ -112,22 +180,35 @@ function imgFail(el){
   let D = window.NEWS_DATA;
   const $ = id => document.getElementById(id);
   const esc = s => String(s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const daysAgo = n => n.date ? (Date.now() - new Date(n.date).getTime()) / 864e5 : Infinity;
 
   async function init(){
     // 線上版優先抓最新的 news.json（加時間參數避免瀏覽器快取舊資料）；本機直接開檔時用 news.js
     if(location.protocol.startsWith("http")){
       try{ const r = await fetch("news.json?t=" + Date.now(), {cache:"no-store"}); if(r.ok) D = await r.json(); }catch(e){}
     }
-    if(!D){ $("sub").textContent = "資料載入失敗，請重新整理頁面。"; return; }
-    $("sub").textContent = `來源：${(D.sources||[]).join("、")}　·　共 ${D.items.length} 則　·　最後更新 ${D.updated_at}`;
-    buildChips(); bind(); render();
+    if(!D){ $("sub").textContent = "資料載入失敗，請重新整理頁面。"; $("list").textContent = "資料載入失敗，請重新整理頁面。"; return; }
+    $("sub").innerHTML = `最後更新 <b>${esc(D.updated_at)}</b>　·　來源：${esc((D.sources||[]).join("、"))}`;
+    $("list").className = "";
+    buildStats(); bind(); render();
   }
 
-  function inRange(n){
-    if(!S.range) return true;
-    if(!n.date) return true;
-    return (Date.now() - new Date(n.date).getTime()) / 864e5 <= S.range;
+  function buildStats(){
+    const it = D.items;
+    const d7 = it.filter(n => daysAgo(n) <= 7).length;
+    const d30 = it.filter(n => daysAgo(n) <= 30);
+    const cnt = {};
+    d30.forEach(n => n.companies.forEach(c => cnt[c] = (cnt[c]||0) + 1));
+    const top = Object.entries(cnt).sort((a,b) => b[1]-a[1])[0];
+    $("stats").innerHTML = [
+      ["收錄新聞", it.length, "則"],
+      ["近 7 天", d7, "則"],
+      ["近 30 天", d30.length, "則"],
+    ].map(([k,v,u]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}<small>${u}</small></div></div>`).join("")
+    + `<div class="stat"><div class="k">近 30 天最常被報導</div><div class="v word">${top ? esc(top[0]) + `<small>${top[1]} 則</small>` : "—"}</div></div>`;
   }
+
+  function inRange(n){ return !S.range || !n.date || daysAgo(n) <= S.range; }
   function filtered(ignore){
     const q = S.q.trim().toLowerCase();
     return D.items.filter(n => inRange(n)
@@ -142,7 +223,7 @@ function imgFail(el){
       const pool = filtered(key);
       el.innerHTML = names.map(name => {
         const cnt = pool.filter(n => [].concat(n[field]).includes(name)).length;
-        return `<button class="chip ${set.has(name)?"on":""}" data-k="${esc(name)}">${esc(name)}<span class="n">${cnt}</span></button>`;
+        return `<button class="chip ${set.has(name)?"on":""} ${cnt||set.has(name)?"":"zero"}" data-k="${esc(name)}">${esc(name)}<span class="n">${cnt}</span></button>`;
       }).join("");
       el.querySelectorAll(".chip").forEach(b => b.onclick = () => {
         const k = b.dataset.k; set.has(k) ? set.delete(k) : set.add(k); render();
@@ -157,20 +238,22 @@ function imgFail(el){
     // 原站圖片若是 http，在 https 網頁會被擋：先試 https，失敗再經 images.weserv.nl 轉成 https，仍失敗就不顯示
     const src = n.image ? n.image.replace(/^http:/, "https:") : "";
     const alt = n.image && n.image.startsWith("http:") ? "https://images.weserv.nl/?url=" + encodeURIComponent(n.image.replace(/^http:\/\//, "")) : "";
-    const img = n.image ? `<a class="thumb" href="${esc(n.url)}" target="_blank" rel="noopener"><img src="${esc(src)}" data-alt="${esc(alt)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="imgFail(this)"></a>` : "";
-    return `<div class="card">${img}<div class="body">
-      <div class="dt">${n.date ? esc(n.date.replace(/-/g, "/")) : "日期待抓取"}</div>
+    const img = n.image ? `<a class="thumb" href="${esc(n.url)}" target="_blank" rel="noopener" tabindex="-1"><img src="${esc(src)}" data-alt="${esc(alt)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="imgFail(this)"></a>` : "";
+    const sc = n.source === "DIGITIMES" ? "dg" : n.source === "優分析" ? "ua" : "";
+    return `<article class="card">${img}<div class="body">
+      <div class="top"><span class="dt">${n.date ? esc(n.date.replace(/-/g, "/")) : "日期待抓取"}</span>
+        <span class="src ${sc}">${esc(n.source)}${n.author && n.author !== n.source ? "／" + esc(n.author) : ""}</span>
+        ${n.paywall_hint ? '<span class="pay">摘要需訂閱</span>' : ""}</div>
       <a class="t" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
-      <div class="meta">${esc(n.source)}${n.author && n.author !== n.source ? "／" + esc(n.author) : ""}${n.paywall_hint ? '<span class="pay">摘要需訂閱，請看原文</span>' : ""}</div>
-      ${n.summary ? `<p class="sum">${esc(n.summary)}</p>` : ""}
+      ${n.summary ? `<p class="sum">${esc(n.summary)}</p>` : '<div style="height:8px"></div>'}
       <div class="tags">${n.companies.map(c=>`<span class="tag c">${esc(c)}</span>`).join("")}${n.topics.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
-    </div></div>`;
+    </div></article>`;
   }
 
   function updateToggle(){
-    const n = S.src.size + S.comp.size + S.topic.size + (S.q.trim() ? 1 : 0);
+    const n = S.src.size + S.comp.size + S.topic.size;
     const open = !document.body.classList.contains("nofilter");
-    $("ftoggle").innerHTML = (open ? "收合篩選" : "展開篩選") + (n ? `<span class="n">${n}</span>` : "");
+    $("ftoggle").innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg>${open ? "收合篩選" : "篩選"}` + (n ? `<span class="n">${n}</span>` : "");
     $("ftoggle").setAttribute("aria-expanded", open);
   }
 
@@ -178,18 +261,18 @@ function imgFail(el){
     buildChips(); updateToggle();
     const items = filtered();
     const L = $("list");
-    if(!items.length){ L.innerHTML = '<div class="empty">沒有符合條件的新聞</div>'; return; }
+    if(!items.length){ L.innerHTML = '<div class="empty">沒有符合條件的新聞。試試把期間改成「全部」，或清除篩選。</div>'; return; }
     if(S.view === "time"){
       const byMonth = {};
       items.forEach(n => { const k = (n.date||"未知").slice(0,7); (byMonth[k] = byMonth[k] || []).push(n); });
       L.innerHTML = Object.keys(byMonth).sort((a,b) => a==="未知" ? 1 : b==="未知" ? -1 : b.localeCompare(a)).map(k =>
-        `<div class="group"><h2>${k==="未知"?"日期不明":k.replace("-"," 年 ")+" 月"}<span class="n">${byMonth[k].length} 則</span></h2>${byMonth[k].map(card).join("")}</div>`).join("");
+        `<section class="group"><h2>${k==="未知"?"日期不明":k.replace("-"," 年 ").replace(/ 0?(\d+)$/," $1")+" 月"}<span class="n">${byMonth[k].length} 則</span></h2>${byMonth[k].map(card).join("")}</section>`).join("");
     } else {
       const field = S.view === "company" ? "companies" : "topics";
       const names = (S.view === "company" ? D.companies : D.topics).concat(["其他"]);
       L.innerHTML = names.map(name => {
         const g = items.filter(n => name === "其他" ? !n[field].length : n[field].includes(name));
-        return g.length ? `<div class="group"><h2>${esc(name)}<span class="n">${g.length} 則</span></h2>${g.map(card).join("")}</div>` : "";
+        return g.length ? `<section class="group"><h2>${esc(name)}<span class="n">${g.length} 則</span></h2>${g.map(card).join("")}</section>` : "";
       }).join("");
     }
   }
@@ -197,7 +280,7 @@ function imgFail(el){
   function bind(){
     let saved = null;
     try{ saved = localStorage.getItem("ccl-filter-open"); }catch(e){}
-    const startOpen = saved !== null ? saved === "1" : window.innerWidth > 820;
+    const startOpen = saved !== null ? saved === "1" : window.innerWidth > 860;
     document.body.classList.toggle("nofilter", !startOpen);
     $("ftoggle").onclick = () => {
       const open = document.body.classList.toggle("nofilter") === false;
@@ -207,8 +290,8 @@ function imgFail(el){
     $("q").oninput = e => { S.q = e.target.value; render(); };
     $("range").onchange = e => { S.range = +e.target.value; render(); };
     $("clear").onclick = () => { S.src.clear(); S.comp.clear(); S.topic.clear(); S.q=""; $("q").value=""; render(); };
-    $("tabs").querySelectorAll(".tab[data-v]").forEach(b => b.onclick = () => {
-      $("tabs").querySelectorAll(".tab[data-v]").forEach(x => x.classList.remove("on"));
+    $("tabs").querySelectorAll("button").forEach(b => b.onclick = () => {
+      $("tabs").querySelectorAll("button").forEach(x => x.classList.remove("on"));
       b.classList.add("on"); S.view = b.dataset.v; render();
     });
   }
