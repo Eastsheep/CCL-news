@@ -243,6 +243,7 @@ def save(items):
 def run():
     existing = load_existing()
     candidates = {}
+    seeds = {canonical(u) for src in config.SOURCES for u in src.get("seeds", [])}
     for src in config.SOURCES:
         candidates.update({canonical(u): "" for u in src.get("seeds", [])})
         pages = [(p, False) for p in src.get("list_pages", [])]
@@ -267,7 +268,8 @@ def run():
             continue
         item = parse_article(url, html)
         text = item["title"] + " " + item["summary"]
-        if not item["title"] or not matches(text, config.RELEVANCE_TERMS):
+        # 種子文章是人工挑過的，不再用關鍵字過濾
+        if not item["title"] or (url not in seeds and not matches(text, config.RELEVANCE_TERMS)):
             log(f"[drop] 不相關：{item['title'][:40]}")
             continue
         item["companies"], item["topics"] = classify(text)
