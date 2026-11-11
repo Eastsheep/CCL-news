@@ -26,10 +26,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - name: 抓取新聞
+      - if: github.event_name != 'push'
+        run: pip install -r requirements.txt
+      - name: 抓取新聞（推送程式更新時只重新部署，不重新爬取，減少對來源網站的負擔）
+        if: github.event_name != 'push'
         run: python scraper.py
       - name: 保存資料
+        if: github.event_name != 'push'
         run: |
           git config user.name "ccl-news-bot"
           git config user.email "actions@users.noreply.github.com"

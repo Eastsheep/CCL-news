@@ -117,9 +117,8 @@ SOURCES = [
         # 優分析有標籤頁（股票代號或主題）與站內搜尋；robots.txt 全站允許
         "search_pages": [
             "https://uanalyze.com.tw/index.php/articles?tag={q}",
-            "https://uanalyze.com.tw/articles/search/{q}",
         ],
-        "search_terms": ["CCL", "M9", "2383", "6274", "6213", "台光電", "台燿", "聯茂", "玻纖布", "銅箔基板"],
+        "search_terms": ["CCL", "M9", "2383", "6274", "6213", "玻纖布", "銅箔基板"],
         "article_re": r"uanalyze\.com\.tw/(?:index\.php/)?articles/(\d{6,})",
         "canonical": "https://uanalyze.com.tw/articles/{id}",
         "seeds": [],
