@@ -6,16 +6,7 @@ jobs:
   d:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36 CCLNewsBot/0.1 (internal research)"
-          echo "=== sitemap"; curl -sSL -A "$UA" https://www.wealth.com.tw/sitemap.xml | head -c 2000; echo
-          echo "=== home"; curl -sSL -A "$UA" https://www.wealth.com.tw/ -o h.html; wc -c h.html
-          grep -oE 'href="/articles/[0-9a-f-]{36}"' h.html | sort -u | wc -l
-          echo "=== search"; curl -sSL -A "$UA" "https://www.wealth.com.tw/search?q=CCL" -o s.html; wc -c s.html
-          grep -oE '/articles/[0-9a-f-]{36}' s.html | sort -u | wc -l
-          echo "=== tag"; curl -sSL -A "$UA" "https://www.wealth.com.tw/tags/CCL" -o t.html; wc -c t.html
-          grep -oE '/articles/[0-9a-f-]{36}' t.html | sort -u | wc -l
-          echo "=== article"; curl -sSL -A "$UA" https://www.wealth.com.tw/articles/8c734bf6-0b00-4e2b-a574-6c9c7084b43b -o a.html; wc -c a.html
-          grep -oE '<title>[^<]*|<meta[^>]+(og:|description|published|date)[^>]*>' a.html | head -20
-          grep -oE '__NEXT_DATA__|__NUXT__|application/ld\+json' a.html | sort | uniq -c
-          grep -oE '20[0-9]{2}[-/.][0-9]{2}[-/.][0-9]{2}' a.html | sort | uniq -c | head
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium >/dev/null && python probe.py
