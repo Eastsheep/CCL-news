@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""CCL 新聞爬蟲（DIGITIMES、優分析）
+"""CCL 新聞爬蟲（DIGITIMES、優分析、財訊）
 
 只抓公開可見的內容：標題、日期、連結、網站提供的摘要（meta description / 導言）。
 不抓付費全文，遵守 robots.txt，每次請求間隔 REQUEST_DELAY_SEC 秒。
@@ -9,6 +9,7 @@
     python3 scraper.py --debug URL  # 印出某頁解析結果，方便調整
 """
 import json
+import os
 import re
 import sys
 import time
@@ -72,6 +73,9 @@ def fetch(url):
     if wait > 0:
         time.sleep(wait)
     _last_request = time.time()
+    src = source_of(url)
+    if src and src.get("render"):
+        return render(url)
     try:
         r = session.get(url, timeout=config.TIMEOUT_SEC)
     except Exception as e:
@@ -83,6 +87,30 @@ def fetch(url):
     if not r.encoding or r.encoding.lower() in ("iso-8859-1", "ascii"):
         r.encoding = r.apparent_encoding
     return r.text
+
+
+_browser = None
+
+
+def render(url):
+    """用無頭瀏覽器開頁面（給內容由 JavaScript 產生的網站，例如財訊），等同一般人用瀏覽器瀏覽。"""
+    global _browser
+    try:
+        if _browser is None:
+            from playwright.sync_api import sync_playwright
+            _browser = sync_playwright().start().chromium.launch()
+        page = _browser.new_page(user_agent=config.USER_AGENT, locale="zh-TW")
+        try:
+            page.goto(url, wait_until="networkidle", timeout=45000)
+        except Exception:
+            pass  # 廣告等第三方請求常讓 networkidle 逾時，內容通常已經出來
+        page.wait_for_timeout(1500)
+        html = page.content()
+        page.close()
+        return html
+    except Exception as e:
+        log(f"[error] render {url}: {e}")
+        return None
 
 
 def source_of(url):
@@ -189,7 +217,7 @@ def parse_date(soup, html):
 def parse_article(url, html):
     soup = BeautifulSoup(html, "html.parser")
     title = _meta(soup, "og:title") or (soup.title.get_text(strip=True) if soup.title else "")
-    title = re.sub(r"\s*[|｜\-–]\s*(DIGITIMES|優分析|Uanalyze|UAnalyze).*$", "", title, flags=re.I).strip()
+    title = re.sub(r"\s*[|｜\-–]\s*(DIGITIMES|優分析|Uanalyze|UAnalyze|財訊雙週刊|財訊).*$", "", title, flags=re.I).strip()
     summary = _meta(soup, "og:description", "description")
     if len(summary) < 30:
         # 退而求其次：取內文第一段（通常是公開導言）
@@ -202,10 +230,23 @@ def parse_article(url, html):
     if re.search(r"(會員登入|忘記密碼|帳號啟用|記住帳號)", summary):
         summary = ""   # 抓到的是登入框文字，不是摘要
     paywall = not summary
+    date = ""
+    if source_of(url).get("render"):
+        # 財訊：日期寫在標題下方，取標題後面第一個日期，避免抓到側欄其他文章的日期
+        body = soup.body.get_text(" ", strip=True) if soup.body else ""
+        i = body.find(title[:12]) if title else -1
+        for rx in DATE_RES:
+            m = rx.search(body, max(i, 0))
+            if m:
+                try:
+                    date = datetime(*map(int, m.groups())).strftime("%Y-%m-%d")
+                except ValueError:
+                    pass
+                break
     return {
         "id": item_key(url),
         "title": title,
-        "date": parse_date(soup, html),
+        "date": date or parse_date(soup, html),
         "url": url,
         "summary": summary,
         "source": source_of(url)["name"],
@@ -244,7 +285,10 @@ def run():
     existing = load_existing()
     candidates = {}
     seeds = {canonical(u) for src in config.SOURCES for u in src.get("seeds", [])}
+    only = [x for x in os.environ.get("ONLY_SOURCES", "").split(",") if x]
     for src in config.SOURCES:
+        if only and src["name"] not in only:
+            continue
         candidates.update({canonical(u): "" for u in src.get("seeds", [])})
         pages = [(p, False) for p in src.get("list_pages", [])]
         pages += [(t.format(q=quote(q)), True) for t in src.get("search_pages", []) for q in src.get("search_terms", [])]
@@ -260,7 +304,7 @@ def run():
 
     new = [u for u in candidates if item_key(u) and item_key(u) not in existing]
     # 舊資料還沒有圖片欄位的，順便補抓（新文章優先）
-    new += [n["url"] for n in existing.values() if "image" not in n]
+    new += [n["url"] for n in existing.values() if "image" not in n and (not only or n["source"] in only)]
     log(f"[info] 候選 {len(candidates)} 篇，新文章 {len(new)} 篇（本次最多抓 {config.MAX_ARTICLES_PER_RUN}）")
     for url in new[: config.MAX_ARTICLES_PER_RUN]:
         html = fetch(url)
@@ -290,6 +334,8 @@ def run():
     for item in existing.values():
         item["companies"], item["topics"] = classify(item["title"] + " " + item["summary"])
     save(existing)
+    if _browser is not None:
+        _browser.close()
 
 
 def debug(url):

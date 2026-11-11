@@ -6,6 +6,11 @@ on:
     - cron: "17 22 * * *"  # 每天台灣時間 06:17
     - cron: "17 10 * * *"  # 每天台灣時間 18:17
   workflow_dispatch:        # 也可以在 Actions 頁面手動執行
+    inputs:
+      sources:
+        description: "只抓這些來源（逗號分隔，留空=全部），例如 財訊"
+        required: false
+        default: ""
   push:
     branches: [main]
 
@@ -27,10 +32,12 @@ jobs:
         with:
           python-version: "3.12"
       - if: github.event_name != 'push'
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
       - name: 抓取新聞（推送程式更新時只重新部署，不重新爬取，減少對來源網站的負擔）
         if: github.event_name != 'push'
         run: python scraper.py
+        env:
+          ONLY_SOURCES: ${{ github.event.inputs.sources }}
       - name: 保存資料
         if: github.event_name != 'push'
         run: |

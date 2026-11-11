@@ -123,6 +123,27 @@ SOURCES = [
         "canonical": "https://uanalyze.com.tw/articles/{id}",
         "seeds": [],
     },
+    {
+        "name": "財訊",
+        "domain": "wealth.com.tw",
+        # 財訊網站內容由 JavaScript 產生，用無頭瀏覽器開啟；robots.txt 全站允許
+        "render": True,
+        "list_pages": ["https://www.wealth.com.tw/"],
+        "article_re": r"wealth\.com\.tw/articles/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})",
+        "canonical": "https://www.wealth.com.tw/articles/{id}",
+        # 2026-11-11 以搜尋引擎找到的財訊 CCL 相關文章
+        "seeds": [
+            "https://www.wealth.com.tw/articles/8c734bf6-0b00-4e2b-a574-6c9c7084b43b",
+            "https://www.wealth.com.tw/articles/dc95b3e8-cd61-494b-8ed0-807c5f24f934",
+            "https://www.wealth.com.tw/articles/d1a8a42a-91bb-4d5f-9235-141f33bf886b",
+            "https://www.wealth.com.tw/articles/40a4340b-e2de-45df-9687-0c9abf36741c",
+            "https://www.wealth.com.tw/articles/49dbc1e5-eef3-459d-8cfe-cb879acd6fbb",
+            "https://www.wealth.com.tw/articles/cc8aeb61-653c-4843-affb-724eb806e93a",
+            "https://www.wealth.com.tw/articles/25c0c42f-f038-49b0-8844-12b2df657ea9",
+            "https://www.wealth.com.tw/articles/e2a5e67a-fc59-4982-ab4e-46a49b8dee05",
+            "https://www.wealth.com.tw/articles/cc2ad79b-0f77-42e3-a80e-f67f281a05bf",
+        ],
+    },
 ]
 
 # 判斷「是否與 CCL 相關」：標題或摘要命中任一個才收錄

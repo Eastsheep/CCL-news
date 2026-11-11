@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CCL 產業情報">
 <meta property="og:title" content="CCL 產業情報｜銅箔基板產業新聞每日彙整">
-<meta property="og:description" content="DIGITIMES、優分析的 CCL 新聞，依台光電、台燿、聯茂、南亞與 M7/M8/M9、玻纖布、HVLP 銅箔等主題分類，每日自動更新。">
+<meta property="og:description" content="DIGITIMES、優分析、財訊的 CCL 新聞，依台光電、台燿、聯茂、南亞與 M7/M8/M9、玻纖布、HVLP 銅箔等主題分類，每日自動更新。">
 <meta property="og:url" content="https://ccl.cheng-ting.cc/">
 <meta property="og:image" content="https://ccl.cheng-ting.cc/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -113,7 +113,7 @@ select{width:100%;height:38px;padding:0 10px;border:1px solid var(--line);border
 .dt{font-weight:500;color:var(--accent-text);font-variant-numeric:tabular-nums}
 .src{display:inline-flex;align-items:center;gap:5px}
 .src::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--faint)}
-.src.dg::before{background:#3d7cc9}.src.ua::before{background:#2f9e6e}
+.src.dg::before{background:#3d7cc9}.src.ua::before{background:#2f9e6e}.src.wl::before{background:#c0392b}
 .pay{color:var(--warn)}
 .card a.t{display:block;color:var(--text);text-decoration:none;font-weight:700;font-size:16px;line-height:1.45}
 .card a.t:hover{color:var(--accent-text)}
@@ -180,7 +180,7 @@ footer{color:var(--faint);font-size:12px;padding:28px 0 36px;border-top:1px soli
     <main><div id="list" class="loading">載入中…</div></main>
   </div>
 
-  <footer>資料來源：DIGITIMES、優分析的公開標題與摘要，全文請點連結至原網站閱讀。圖片連結自原網站。本頁僅供內部研究使用。</footer>
+  <footer>資料來源：DIGITIMES、優分析、財訊的公開標題與摘要，全文請點連結至原網站閱讀。圖片連結自原網站。本頁僅供內部研究使用。</footer>
 </div>
 
 <script src="news.js" onerror="void 0"></script>
@@ -253,7 +253,7 @@ function imgFail(el){
     const src = n.image ? n.image.replace(/^http:/, "https:") : "";
     const alt = n.image && n.image.startsWith("http:") ? "https://images.weserv.nl/?url=" + encodeURIComponent(n.image.replace(/^http:\/\//, "")) : "";
     const img = n.image ? `<a class="thumb" href="${esc(n.url)}" target="_blank" rel="noopener" tabindex="-1"><img src="${esc(src)}" data-alt="${esc(alt)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="imgFail(this)"></a>` : "";
-    const sc = n.source === "DIGITIMES" ? "dg" : n.source === "優分析" ? "ua" : "";
+    const sc = n.source === "DIGITIMES" ? "dg" : n.source === "優分析" ? "ua" : n.source === "財訊" ? "wl" : "";
     return `<article class="card">${img}<div class="body">
       <div class="top"><span class="dt">${n.date ? esc(n.date.replace(/-/g, "/")) : "日期待抓取"}</span>
         <span class="src ${sc}">${esc(n.source)}${n.author && n.author !== n.source ? "／" + esc(n.author) : ""}</span>
