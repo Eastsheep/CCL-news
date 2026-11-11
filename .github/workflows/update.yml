@@ -2,7 +2,9 @@ name: 更新 CCL 新聞
 
 on:
   schedule:
-    - cron: "0 23 * * *"   # 每天台灣時間早上 7:00
+    # GitHub 整點排程常延遲很久，所以避開整點
+    - cron: "17 22 * * *"  # 每天台灣時間 06:17
+    - cron: "17 10 * * *"  # 每天台灣時間 18:17
   workflow_dispatch:        # 也可以在 Actions 頁面手動執行
   push:
     branches: [main]

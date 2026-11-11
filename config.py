@@ -39,6 +39,8 @@ SOURCES = [
             "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000717278_GI53C07661XTHW95VKC55",
             "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000705600_DI77U0QMLOJ9Q818AQEK2",
             "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000697434_7L653LSX26OWLC5SWXTHV",
+            # 使用者指定加入
+            "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=772859",
             # 2026-11-10 以搜尋引擎補進的 DIGITIMES CCL 相關舊聞
             "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773908_D6ULZTKTL3R9JO9WDT988",
             "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000765355_KKH4WBMP4B1MBQ6ASCHY8",
