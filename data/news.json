@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10 17:29",
+ "updated_at": "2026-11-11 08:37",
  "sources": [
   "DIGITIMES",
   "優分析"
@@ -190,6 +190,24 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:23"
+  },
+  {
+   "id": "digitimes.com.tw:772859",
+   "title": "FCBGA市場2030年衝273億美元、ABF材料2027年供不應求",
+   "date": "2026-10-30",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=772859",
+   "summary": "NVIDIA提前鎖定台日韓高階載板產能，透過產能預訂協議及預付款支持供應商擴產，因應新一代AI加速器持續放量。NVIDIA日前宣布，將與揖斐電（Ibiden）、三星電機（Samsung Electro-Mechanics）、欣興，以及Amkor、京元電、矽品等供...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1030/772859-1-slb0w_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器",
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-11 08:37"
   },
   {
    "id": "uanalyze.com.tw:3281757918",
