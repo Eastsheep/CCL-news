@@ -2,7 +2,7 @@
   "name": "CCL 產業情報",
   "short_name": "CCL 情報",
   "start_url": "./",
-  "display": "standalone",
+  "display": "browser",
   "background_color": "#10263a",
   "theme_color": "#10263a",
   "icons": [
