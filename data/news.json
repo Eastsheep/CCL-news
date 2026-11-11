@@ -1,8 +1,9 @@
 {
- "updated_at": "2026-11-11 08:37",
+ "updated_at": "2026-11-11 08:49",
  "sources": [
   "DIGITIMES",
-  "優分析"
+  "優分析",
+  "財訊"
  ],
  "companies": [
   "台光電",
@@ -326,6 +327,30 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-10 02:24"
+  },
+  {
+   "id": "wealth.com.tw:8c734bf6-0b00-4e2b-a574-6c9c7084b43b",
+   "title": "高階銅箔基板吃緊 CCL三雄緊吃 擴產搶料新品齊發 搶市大戰最新進度曝光",
+   "date": "2026-10-22",
+   "url": "https://www.wealth.com.tw/articles/8c734bf6-0b00-4e2b-a574-6c9c7084b43b",
+   "summary": "AI伺服器與高速交換器需求強勁，高階銅箔基板（CCL）供給吃緊，上游銅箔、玻纖布缺料及漲價壓力同步升高，台光電、台燿、聯茂加速擴產、掌握料源及研發新產品，全力搶攻AI商機。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/34bb71c005f2f0b75e47fc6fcefc96dd09174025.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "台燿",
+    "聯茂"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "漲價 / 報價",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-11 08:47"
   },
   {
    "id": "uanalyze.com.tw:4490657568",
@@ -828,6 +853,20 @@
    "fetched_at": "2026-11-10 11:03"
   },
   {
+   "id": "wealth.com.tw:25c0c42f-f038-49b0-8844-12b2df657ea9",
+   "title": "張真卿：PCB產業典範轉移",
+   "date": "2026-10-12",
+   "url": "https://www.wealth.com.tw/articles/25c0c42f-f038-49b0-8844-12b2df657ea9",
+   "summary": "印刷電路板（PCB）被很多人譽為電子產品之母。台灣PCB發展歷史，最早美商安培電子於1969年在桃園設廠，1973年華通電腦成立，成為台灣第1家純台資PCB廠，奠定本土製造基礎。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/2bde340d04edfda585cff3b2a7e33a77e2b1b6b2.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [],
+   "fetched_at": "2026-11-11 08:48"
+  },
+  {
    "id": "uanalyze.com.tw:8811856879",
    "title": "川湖、台光電如何崛起？QIC揭500家AI明日之星 估2030年市值成長5倍",
    "date": "2026-10-12",
@@ -844,6 +883,43 @@
     "M7/M8/M9 等級"
    ],
    "fetched_at": "2026-11-10 02:33"
+  },
+  {
+   "id": "wealth.com.tw:dc95b3e8-cd61-494b-8ed0-807c5f24f934",
+   "title": "聯茂急起直追！特殊基板市占躍居全球第二　董事長陳進財：「最大機會是訂單做不完！」",
+   "date": "2026-10-08",
+   "url": "https://www.wealth.com.tw/articles/dc95b3e8-cd61-494b-8ed0-807c5f24f934",
+   "summary": "「最大的機會就是訂單做不完，最大的挑戰就是原料拿不到！」面對AI伺服器與高階網通需求的大爆發，銅箔基板（CCL）大廠聯茂電子（ITEQ）董事長陳進財在泰國巴真府新廠現場，說出目前的產業現況。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/2c9267f451f64b309d82b9cb4a4f1ed33bee2ee1.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "聯茂"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-11 08:47"
+  },
+  {
+   "id": "wealth.com.tw:40a4340b-e2de-45df-9687-0c9abf36741c",
+   "title": "輝達掀PTFE、HC材料革命？法人反押這2家CCL廠 關鍵原因曝光",
+   "date": "2026-10-08",
+   "url": "https://www.wealth.com.tw/articles/40a4340b-e2de-45df-9687-0c9abf36741c",
+   "summary": "AI伺服器架構持續升級，高頻高速傳輸對訊號完整性的要求也同步提高，PCB材料正迎來新一波技術變革，市場傳出，輝達近期正攜手供應鏈測試「無布化」材料方案，導入聚四氟乙烯（PTFE）、碳氫樹脂（HC）等材料進行驗證，目標應用於預計2027年下半年量產的Rubin Ultra NVL576 Switch Tray。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/43d3ffade4a6a1a54d8535c749d0ecbaa0249b31.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "樹脂 / 添加劑",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-11 08:48"
   },
   {
    "id": "uanalyze.com.tw:2045256739",
@@ -2120,6 +2196,25 @@
    "fetched_at": "2026-11-10 11:02"
   },
   {
+   "id": "wealth.com.tw:49dbc1e5-eef3-459d-8cfe-cb879acd6fbb",
+   "title": "玻璃纖維布挑戰時刻來了！謝金河：日本龍頭股價回檔、台廠面臨挑戰",
+   "date": "2026-06-12",
+   "url": "https://www.wealth.com.tw/articles/49dbc1e5-eef3-459d-8cfe-cb879acd6fbb",
+   "summary": "這次AI的軍備競賽，帶動高階銅箔基板及玻纎布的超級大行情，台光電股價一度大漲到5635元，一家台光電市值曾經超過台塑四寶加起來的總合。高階玻纖布更是供不應求，帶動整個產業欣欣向榮。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/22b9a7a9b8bd3b6939f9d4a610eb326020c53615.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP"
+   ],
+   "fetched_at": "2026-11-11 08:48"
+  },
+  {
    "id": "digitimes.com.tw:0000758368_7H7263CB76C13C7JM3DN0",
    "title": "HVLP4銅箔接棒T-glass玻纖布喊缺　NVIDIA親上PCB火線調料",
    "date": "2026-06-11",
@@ -2156,6 +2251,27 @@
     "AI 伺服器 / 交換器"
    ],
    "fetched_at": "2026-11-10 11:03"
+  },
+  {
+   "id": "wealth.com.tw:cc2ad79b-0f77-42e3-a80e-f67f281a05bf",
+   "title": "華通被PCB女王看上　高盛續挺金像電、台燿 目標價曝光",
+   "date": "2026-06-05",
+   "url": "https://www.wealth.com.tw/articles/cc2ad79b-0f77-42e3-a80e-f67f281a05bf",
+   "summary": "PCB、銅箔基板（CCL）指標股雄風再起，高盛證券看好金像電獲得新ASIC專案挹注、台燿高階CCL需求下半年爆發，成功引導市場將注意力轉回高價雙箭頭；PCB女王、統一投顧總經理廖婉婷繼推升金居飆漲，最新調升華通股價預期至385元，接下來牽動資金重新布局可期。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/58fd5c7b732b7f4c6a251e991c86f5a6eae12157.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台燿",
+    "銅箔廠"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-11 08:49"
   },
   {
    "id": "digitimes.com.tw:0000757595_CXY6I6NB81XKME6EUR6P4",
@@ -2665,6 +2781,23 @@
    "fetched_at": "2026-11-10 11:04"
   },
   {
+   "id": "wealth.com.tw:cc8aeb61-653c-4843-affb-724eb806e93a",
+   "title": "「玻纖布」缺料恐將貫穿2026全年！ 欣興：資本支出大舉上修至340億元",
+   "date": "2026-02-26",
+   "url": "https://www.wealth.com.tw/articles/cc8aeb61-653c-4843-affb-724eb806e93a",
+   "summary": "欣興今日召開法說會，行銷長楊筑華會中示警，玻纖布（E-glass）的缺料並不樂觀，短缺狀況應該會持續轉趨嚴峻，目前幾乎所有客戶在玻纖布的需求都受到限制，甚至需求遠比現在看到的還要強勁，因此確實處於被壓制的狀態，並宣布 2026 年資本支出將大幅上修至 340 億元。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/a425ad81a1caaae1866ec879f061a99109c68176.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-11 08:48"
+  },
+  {
    "id": "digitimes.com.tw:0000746667_DXZ5QUX473M3AU6YLI4GC",
    "title": "AI客戶搶料引燃產能大戰　玻纖布二度發動全面漲價攻勢",
    "date": "2026-02-13",
@@ -3162,6 +3295,23 @@
     "CPO / 載板"
    ],
    "fetched_at": "2026-11-10 11:17"
+  },
+  {
+   "id": "wealth.com.tw:e2a5e67a-fc59-4982-ab4e-46a49b8dee05",
+   "title": "張真卿：關注PCB上游產業",
+   "date": "2025-08-21",
+   "url": "https://www.wealth.com.tw/articles/e2a5e67a-fc59-4982-ab4e-46a49b8dee05",
+   "summary": "如果一個產業或一家公司具有「新產品」、「新市場」特質，就會是資本市場注目焦點。新產品和新市場的公司具有低基期、市占率從零開始的優勢。它們的特色是毛利率較高、獲利率也相對高。像早期的智慧型手機、蘋概股、近期的電動車、AI伺服器、虛擬實境（VR）等就屬新產品，而擁有這些新產品的公司，如蘋果、特斯拉、台積電等，股價都有不錯的表現。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/00415ef2dfd6ad28ae5e171f3f87a37fe59bcb90.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "AI 伺服器 / 交換器",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-11 08:49"
   },
   {
    "id": "digitimes.com.tw:729779",
@@ -3698,6 +3848,23 @@
     "銅箔 / HVLP"
    ],
    "fetched_at": "2026-11-10 02:33"
+  },
+  {
+   "id": "wealth.com.tw:d1a8a42a-91bb-4d5f-9235-141f33bf886b",
+   "title": "張捷：高階銅箔基板的缺貨商機",
+   "date": "2023-11-22",
+   "url": "https://www.wealth.com.tw/articles/d1a8a42a-91bb-4d5f-9235-141f33bf886b",
+   "summary": "高盛證券推估，全球銅箔基板2016~2025年CAGR（複合成長率）僅5%，但高階銅箔基板2023~2025年CAGR則達27%，市況兩極。目前中低階銅箔基板呈供過於求，極低損耗（very low loss）以上高階產品則因高階應用火熱供不應求。高階銅箔基板主要受惠3股趨勢：1、AI伺服器，2、傳統伺服器新平台，3、400G/800G交換器。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/4f1fa0dbc33f6958c28ec2dc2f81a453a85467a6.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-11 08:48"
   },
   {
    "id": "uanalyze.com.tw:688964126",
