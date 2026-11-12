@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12 10:58",
+ "updated_at": "2026-11-13 02:21",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -30,6 +30,25 @@
   "營收 / 財報"
  ],
  "items": [
+  {
+   "id": "uanalyze.com.tw:3545359188",
+   "title": "〈焦點股〉台玻受惠玻纖布暢旺 盤中連拉4根漲停一度衝上波段新高",
+   "date": "2026-11-12",
+   "url": "https://uanalyze.com.tw/articles/3545359188",
+   "summary": "台玻(1802-TW)受惠於AI伺服器、高速交換器推升高階玻纖布需求，今(12)日股價開高走高，盤中在大單持續敲進下，爆量47.8萬張，較昨(11)日增進21萬張，一度亮燈衝上漲停84.3元。...",
+   "source": "優分析",
+   "author": "",
+   "image": "http://storage.uanalyze.com.tw/article/45/covers/2026111213500586_m.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-13 02:21"
+  },
   {
    "id": "uanalyze.com.tw:3310958941",
    "title": "〈焦點股〉台玻10月受惠玻纖布出貨動能強勁 業績亮眼助股價漲停創近5個月新高",
