@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 02:21",
+ "updated_at": "2026-11-13 10:39",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -30,6 +30,24 @@
   "營收 / 財報"
  ],
  "items": [
+  {
+   "id": "digitimes.com.tw:774555",
+   "title": "科技1分鐘：從不沾鍋走進AI伺服器　鐵氟龍PTFE切入高速傳輸",
+   "date": "2026-11-13",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=774555",
+   "summary": "AI伺服器持續提高資料傳輸速度，電路板材料也迎來新一波升級。2026年的開放運算計畫（OCP）全球峰會及台灣電路板產業國際展覽會（TPCA）上，俗稱鐵氟龍的聚四氟乙烯（Polytetrafluoroethylene；PTFE）成為高階材料討論焦點。<br /...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1113/774555-1-noanj_l.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "樹脂 / 添加劑",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-13 10:39"
+  },
   {
    "id": "uanalyze.com.tw:3545359188",
    "title": "〈焦點股〉台玻受惠玻纖布暢旺 盤中連拉4根漲停一度衝上波段新高",
