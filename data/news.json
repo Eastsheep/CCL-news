@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 10:39",
+ "updated_at": "2026-11-14 01:48",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -31,6 +31,83 @@
  ],
  "items": [
   {
+   "id": "wealth.com.tw:ec767fb8-81d7-4c8d-8be1-2a6f87276d1e",
+   "title": "三率三升！銅箔基板、記憶體Q3搶眼 「這檔」EPS 40.47元搶頭香",
+   "date": "2026-11-13",
+   "url": "https://www.wealth.com.tw/articles/ec767fb8-81d7-4c8d-8be1-2a6f87276d1e",
+   "summary": "上市櫃公司第三季財報陸續出爐，毛利率、營業利益率及稅後純益率均較第二季走升、繳出「三率三升」成績單的個股，以銅箔基板與記憶體兩大族群最搶眼。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/ad4bbb625d9af6cc26cf6680c5910647613947b7.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-14 01:48"
+  },
+  {
+   "id": "wealth.com.tw:00fac640-f843-4dc4-a0f9-6c1c11d7f2f5",
+   "title": "南亞砸115億擴高階玻纖布產能　摩根大通維持加碼 目標價看這數字",
+   "date": "2026-11-13",
+   "url": "https://www.wealth.com.tw/articles/00fac640-f843-4dc4-a0f9-6c1c11d7f2f5",
+   "summary": "南亞（1303）11日董事會通過斥資115.3億元於彰化縣彰濱廠區投資興建玻纖布五廠，規劃年產1億米。摩根大通認為，預估新廠滿載後，每年可挹注逾50億元營業利益，相當占今年的營業利益一成，是南亞獲利成長的重要引擎，維持「加碼」評等，目標價415元。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/67ed4645a852f42fbd2daa20d8873933a3ec5ebd.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "南亞"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "擴產 / 產能",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-14 01:48"
+  },
+  {
+   "id": "uanalyze.com.tw:4333659410",
+   "title": "德宏(5475)第三季毛利率飆至46.25%創新高！玻纖布漲價推升獲利，10月單月每股賺1.04元",
+   "date": "2026-11-13",
+   "url": "https://uanalyze.com.tw/articles/4333659410",
+   "summary": "玻纖布漲價與產品組合改善，帶動德宏(5475-TW)獲利進一步提高。第三季毛利率升至46.25%，較第二季增加9.63個百分點，單季歸屬母公司淨利2.85億元，季增136.14%。公司另公布10月自結每股純益1.04元，13日開盤即攻上211元漲停鎖死。...",
+   "source": "優分析",
+   "author": "",
+   "image": "http://storage.uanalyze.com.tw/article/1/covers/20261113110006639_m.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "漲價 / 報價",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-14 01:48"
+  },
+  {
+   "id": "uanalyze.com.tw:1920459503",
+   "title": "南亞受惠投信連14買站上300元 擬斥資115億元建廠支應玻纖布強勁需求",
+   "date": "2026-11-13",
+   "url": "https://uanalyze.com.tw/articles/1920459503",
+   "summary": "南亞(1303-TW)近年從傳統塑化廠逐步推動全面化轉型，近日公告公告將斥資115.3億元於彰濱廠區投資興建玻纖布五廠，主要為因應AI伺服器及網通產品等高階應用需求成長下，加上印刷電路板(PCB)層數大幅提升產能所需擴廠，南亞今(13)日也在投信連14買挹注下，股價開高走高，收304元漲3.75%，不僅站回300元關卡，也站上所有均線之上。...",
+   "source": "優分析",
+   "author": "",
+   "image": "http://storage.uanalyze.com.tw/article/45/covers/20261113200542512_m.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "南亞"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-14 01:48"
+  },
+  {
    "id": "digitimes.com.tw:774555",
    "title": "科技1分鐘：從不沾鍋走進AI伺服器　鐵氟龍PTFE切入高速傳輸",
    "date": "2026-11-13",
@@ -47,6 +124,22 @@
     "AI 伺服器 / 交換器"
    ],
    "fetched_at": "2026-11-13 10:39"
+  },
+  {
+   "id": "digitimes.com.tw:0000774682_C717LIXH7SOCJW3R733TF",
+   "title": "斗山收購SK Siltron進度超前　傳已通過台灣等6國審查、最快2026年底交割",
+   "date": "2026-11-13",
+   "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000774682_C717LIXH7SOCJW3R733TF",
+   "summary": "斗山集團（Doosan Group）為收購SK Siltron，已在約2個月內完成6個國家的企業結合審查，收購金額達2.3兆韓元（約17.3億美元）。業界指出，購併案的關鍵程序比預期更早完成，預料斗山收購SK Siltron的進程也將進一步加快。<b...",
+   "source": "DIGITIMES",
+   "author": "",
+   "image": "https://img.digitimes.com/newsimg/2026/1113/774682-1-733tf_l.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "斗山"
+   ],
+   "topics": [],
+   "fetched_at": "2026-11-14 01:47"
   },
   {
    "id": "uanalyze.com.tw:3545359188",
