@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16 10:05",
+ "updated_at": "2026-11-17 04:31",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -30,6 +30,44 @@
   "營收 / 財報"
  ],
  "items": [
+  {
+   "id": "uanalyze.com.tw:9739259689",
+   "title": "台光電：輝達對台光電的營收占比從未超過20%",
+   "date": "2026-11-16",
+   "url": "https://uanalyze.com.tw/articles/9739259689",
+   "summary": "CCL廠接連往高頻高速材料發展的同時，近期因黃仁勳辭任輝達(NVDA-US) 執行長造成市場的恐慌，包括聯茂(6213-TW)、台燿(6274-TW)及類股股王台光電(2383-TW)股價的重挫，但台光電今(16)日發布重大訊息指出，輝達對台光電的營收占比從未超過20%...",
+   "source": "優分析",
+   "author": "",
+   "image": "http://storage.uanalyze.com.tw/article/45/covers/20261116212004881_m.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "台燿",
+    "聯茂"
+   ],
+   "topics": [
+    "AI 伺服器 / 交換器",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-17 04:31"
+  },
+  {
+   "id": "uanalyze.com.tw:6483959686",
+   "title": "CCL供應吃緊吸引新廠搶進！印度業者設備從中國運抵　2027年初拚量產、洽談長期訂單",
+   "date": "2026-11-16",
+   "url": "https://uanalyze.com.tw/articles/6483959686",
+   "summary": "印度銅箔基板(CCL)高度依賴進口，本土供應缺口開始吸引其他產業業者跨界投入。原本專門生產不鏽鋼墊圈、板材及管材的Ratnaveer Precision Engineering，正斥資33.8億印度盧比興建CCL工廠（約合台幣12億元），首條產線設備已從中國出貨，準備在印度安裝。公司甚至還沒正式投產，就已開始與客戶洽談未來2至3年的長期供貨合約。...",
+   "source": "優分析",
+   "author": "",
+   "image": "http://storage.uanalyze.com.tw/article/1/covers/20261116205931764_m.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-17 04:31"
+  },
   {
    "id": "wealth.com.tw:ec767fb8-81d7-4c8d-8be1-2a6f87276d1e",
    "title": "三率三升！銅箔基板、記憶體Q3搶眼 「這檔」EPS 40.47元搶頭香",
