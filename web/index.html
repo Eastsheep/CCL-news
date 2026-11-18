@@ -134,6 +134,37 @@ select{width:100%;height:38px;padding:0 10px;border:1px solid var(--line);border
 .card a.t:focus-visible{outline:none}
 .card:has(a.t:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
 
+/* 目前套用的篩選 */
+#active{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 14px;font-size:13px;color:var(--muted)}
+#active:empty{display:none}
+#active .cnt{margin-right:4px}
+#active .cnt b{color:var(--text);font-variant-numeric:tabular-nums}
+.af{display:inline-flex;align-items:center;gap:4px;padding:3px 6px 3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent-text);
+  border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);font-size:13px;cursor:pointer;line-height:1.5}
+.af .x{font-size:15px;line-height:1;opacity:.7;padding:0 3px}
+.af:hover .x{opacity:1}
+.af.k{background:var(--chip);color:var(--text);border-color:var(--line)}
+#active .clr{background:none;border:0;color:var(--accent-text);cursor:pointer;font-size:13px;padding:3px 4px;text-decoration:underline;text-underline-offset:3px}
+
+/* 精簡清單模式 */
+.btn.icon{padding:0 11px}
+.btn.on{border-color:var(--accent);color:var(--accent-text)}
+body.compact .card{padding:9px 14px;margin-bottom:6px;border-radius:9px}
+body.compact .card:hover{transform:none}
+body.compact .thumb,body.compact .sum,body.compact .tags{display:none}
+body.compact .card .body{display:flex;align-items:baseline;gap:12px}
+body.compact .top{flex:none;margin:0;width:150px;flex-wrap:nowrap;overflow:hidden}
+body.compact .pay{display:none}
+body.compact .card a.t{font-size:15px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+body.compact .card a.t::after{border-radius:9px}
+body.compact .group h2{margin-bottom:8px}
+@media (max-width:600px){
+  body.compact .card{flex-direction:row;padding:10px 12px}
+  body.compact .card .body{display:block}
+  body.compact .top{width:auto;margin-bottom:2px}
+  body.compact .card a.t{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+}
+
 /* 回到頂部 */
 #totop{position:fixed;right:16px;bottom:20px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--panel);color:var(--text);
   box-shadow:0 4px 16px rgba(16,38,58,.18);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:30;
@@ -189,6 +220,7 @@ footer{color:var(--faint);font-size:12px;padding:28px 0 36px;border-top:1px soli
       <input type="search" id="q" placeholder="搜尋標題或摘要，例如 M9、玻纖布、擴產" aria-label="搜尋">
     </label>
     <button class="btn" id="ftoggle" type="button" aria-expanded="true">篩選</button>
+    <button class="btn icon" id="dens" type="button" aria-pressed="false" title="切換精簡清單"></button>
     <div class="seg" id="tabs" role="tablist">
       <button class="on" data-v="time">依時間</button>
       <button data-v="company">依公司</button>
@@ -219,7 +251,7 @@ footer{color:var(--faint);font-size:12px;padding:28px 0 36px;border-top:1px soli
       <div class="sheet-foot"><button type="button" class="ghost" id="sclear">清除</button><button type="button" class="apply" id="sapply">顯示結果</button></div>
     </aside>
 
-    <main><div id="list" class="loading">載入中…</div></main>
+    <main><div id="active" aria-live="polite"></div><div id="list" class="loading">載入中…</div></main>
   </div>
 
   <div id="backdrop"></div>
@@ -318,9 +350,30 @@ function imgFail(el){
     $("ftoggle").setAttribute("aria-expanded", open);
   }
 
+  const RANGE_TXT = {7:"最近 7 天", 30:"最近 30 天", 90:"最近 90 天", 365:"最近一年", 0:"全部期間"};
+  function renderActive(count){
+    const parts = [];
+    if(S.q.trim()) parts.push(`<button class="af k" data-t="q">搜尋「${esc(S.q.trim())}」<span class="x">×</span></button>`);
+    if(S.range !== 90) parts.push(`<button class="af k" data-t="range">${RANGE_TXT[S.range]}<span class="x">×</span></button>`);
+    [["src",S.src],["comp",S.comp],["topic",S.topic]].forEach(([t,set]) =>
+      set.forEach(v => parts.push(`<button class="af" data-t="${t}" data-v="${esc(v)}">${esc(v)}<span class="x">×</span></button>`)));
+    const A = $("active");
+    if(!parts.length){ A.innerHTML = ""; return; }
+    A.innerHTML = `<span class="cnt">符合 <b>${count}</b> 則</span>` + parts.join("") + `<button class="clr" type="button">清除全部</button>`;
+    A.querySelectorAll(".af").forEach(b => b.onclick = () => {
+      const t = b.dataset.t, v = b.dataset.v;
+      if(t === "q"){ S.q = ""; $("q").value = ""; }
+      else if(t === "range"){ S.range = 90; $("range").value = "90"; }
+      else ({src:S.src, comp:S.comp, topic:S.topic})[t].delete(v);
+      render();
+    });
+    A.querySelector(".clr").onclick = () => $("clear").click();
+  }
+
   function render(){
     buildChips(); updateToggle();
     const items = filtered();
+    renderActive(items.length);
     $("sapply").textContent = `顯示 ${items.length} 則結果`;
     const L = $("list");
     if(!items.length){ L.innerHTML = '<div class="empty">沒有符合條件的新聞。試試把期間改成「全部」，或清除篩選。</div>'; return; }
@@ -372,7 +425,20 @@ function imgFail(el){
     tt.onclick = () => window.scrollTo({top:0, behavior:"smooth"});
     $("q").oninput = e => { S.q = e.target.value; render(); };
     $("range").onchange = e => { S.range = +e.target.value; render(); };
-    $("clear").onclick = () => { S.src.clear(); S.comp.clear(); S.topic.clear(); S.q=""; $("q").value=""; render(); };
+    $("clear").onclick = () => { S.src.clear(); S.comp.clear(); S.topic.clear(); S.q=""; $("q").value=""; S.range=90; $("range").value="90"; render(); };
+    // 精簡清單：記住每台裝置的選擇
+    const ICON_LIST = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
+    const ICON_CARD = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/></svg>';
+    const setDens = on => {
+      document.body.classList.toggle("compact", on);
+      $("dens").classList.toggle("on", on);
+      $("dens").setAttribute("aria-pressed", on);
+      $("dens").innerHTML = on ? ICON_CARD + "詳細" : ICON_LIST + "精簡";
+      try{ localStorage.setItem("ccl-compact", on ? "1" : "0"); }catch(e){}
+    };
+    let dens = false; try{ dens = localStorage.getItem("ccl-compact") === "1"; }catch(e){}
+    setDens(dens);
+    $("dens").onclick = () => setDens(!document.body.classList.contains("compact"));
     $("tabs").querySelectorAll("button").forEach(b => b.onclick = () => {
       $("tabs").querySelectorAll("button").forEach(x => x.classList.remove("on"));
       b.classList.add("on"); S.view = b.dataset.v; render();
