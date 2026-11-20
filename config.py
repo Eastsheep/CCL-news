@@ -148,15 +148,20 @@ SOURCES = [
         "name": "IEK",
         "domain": "ieknet.iek.org.tw",
         # 工研院產科國際所 IEK 產業情報網的「產業新聞」（公開可讀）；產業報告需會員，不抓。robots.txt 為空（全站允許）
-        "list_pages": [
-            "https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&indu_idno=1",   # 半導體
-            "https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&indu_idno=16",  # 電子零組件
-            "https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&indu_idno=7",
+        "list_pages": [],
+        # 分類列表一頁只有 10 則，半導體一天就超過 10 則，所以往後多翻幾頁（{p} = 頁碼）
+        # 一次性補舊文可在手動執行時設 BACKFILL_PAGES（例如 40）
+        "paged_lists": [
+            ("https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&domain=0&indu_idno=1&currentPageIndex={p}", 5),   # 半導體
+            ("https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&domain=0&indu_idno=2&currentPageIndex={p}", 3),   # 零組件及材料
+            ("https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&domain=0&indu_idno=16&currentPageIndex={p}", 3),  # 電子材料
+            ("https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&domain=0&indu_idno=7&currentPageIndex={p}", 2),   # 石化材料
         ],
         "article_re": r"ieknet\.iek\.org\.tw/ieknews/news_(?:open|more)\.aspx\?[^\"'#\s]*nsl_id=([0-9a-f]{32})",
         "canonical": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id={id}",
         # 2026-11-20 以搜尋引擎找到的 IEK CCL 相關產業新聞
         "seeds": [
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4268569d682443fcbe58d192adb8a2ca",  # 使用者指定
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c01c239264554e9792c27a7a1e5dc618",
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=cc024e0bafb7407287b421690d2b20ee",
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=d71a350b63b847f4b8e565ba3ed95b7f",

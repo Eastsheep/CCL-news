@@ -294,6 +294,8 @@ def run():
             continue
         candidates.update({canonical(u): "" for u in src.get("seeds", [])})
         pages = [(p, False) for p in src.get("list_pages", [])]
+        backfill = int(os.environ.get("BACKFILL_PAGES") or 0)
+        pages += [(tpl.format(p=i), False) for tpl, n in src.get("paged_lists", []) for i in range(1, max(n, backfill) + 1)]
         pages += [(t.format(q=quote(q)), True) for t in src.get("search_pages", []) for q in src.get("search_terms", [])]
         for page, _ in pages:
             html = fetch(page)

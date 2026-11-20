@@ -11,6 +11,10 @@ on:
         description: "只抓這些來源（逗號分隔，留空=全部），例如 財訊"
         required: false
         default: ""
+      backfill_pages:
+        description: "有分頁的列表往回翻幾頁（補舊文用，留空=平常設定）"
+        required: false
+        default: ""
   push:
     branches: [main]
 
@@ -38,6 +42,7 @@ jobs:
         run: python scraper.py
         env:
           ONLY_SOURCES: ${{ github.event.inputs.sources }}
+          BACKFILL_PAGES: ${{ github.event.inputs.backfill_pages }}
       - name: 保存資料
         if: github.event_name != 'push'
         run: |
