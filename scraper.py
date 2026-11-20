@@ -246,7 +246,14 @@ def parse_article(url, html):
                 except ValueError:
                     pass
                 break
+    origin = ""
+    if source_of(url).get("origin_selector"):
+        # 轉載站（IEK）：記下原始媒體，例如「工商時報，李娟萍／台北報導」→ 工商時報
+        tag = soup.select_one(source_of(url)["origin_selector"])
+        if tag:
+            origin = re.split(r"[，,／/\s]", tag.get_text(" ", strip=True))[0]
     return {
+        "origin": origin,
         "id": item_key(url),
         "title": title,
         "date": date or parse_date(soup, html),
@@ -310,6 +317,9 @@ def run():
     new = [u for u in candidates if item_key(u) and item_key(u) not in existing]
     # 舊資料還沒有圖片欄位的，順便補抓（新文章優先）
     new += [n["url"] for n in existing.values() if "image" not in n and (not only or n["source"] in only)]
+    # 轉載站的舊資料還沒有原始媒體欄位的，補抓一次
+    new += [n["url"] for n in existing.values() if "origin" not in n and (source_of(n["url"]) or {}).get("origin_selector")
+            and (not only or n["source"] in only) and n["url"] not in new]
     log(f"[info] 候選 {len(candidates)} 篇，新文章 {len(new)} 篇（本次最多抓 {config.MAX_ARTICLES_PER_RUN}）")
     for url in new[: config.MAX_ARTICLES_PER_RUN]:
         html = fetch(url)

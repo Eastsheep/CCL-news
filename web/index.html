@@ -253,6 +253,8 @@ footer{color:var(--faint);font-size:12px;padding:28px 0 36px;border-top:1px soli
       </select>
       <h3>來源</h3>
       <div class="chips" id="fs"></div>
+      <div id="origin-wrap" hidden><h3>原始媒體（IEK 轉載）</h3>
+      <div class="chips" id="fo"></div></div>
       <h3>公司</h3>
       <div class="chips" id="fc"></div>
       <h3>主題</h3>
@@ -277,7 +279,7 @@ function imgFail(el){
   if(alt){ el.removeAttribute("data-alt"); el.src = alt; } else { el.parentNode.remove(); }
 }
 (function(){
-  const S = {view:"time", q:"", range:90, comp:new Set(), topic:new Set(), src:new Set()};
+  const S = {view:"time", q:"", range:90, comp:new Set(), topic:new Set(), src:new Set(), origin:new Set()};
   let D = window.NEWS_DATA;
   const $ = id => document.getElementById(id);
   const esc = s => String(s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -317,6 +319,7 @@ function imgFail(el){
     const q = S.q.trim().toLowerCase();
     return D.items.filter(n => inRange(n)
       && (ignore==="src" || !S.src.size || S.src.has(n.source))
+      && (ignore==="origin" || !S.origin.size || S.origin.has(n.origin || ""))
       && (ignore==="comp" || !S.comp.size || n.companies.some(c => S.comp.has(c)))
       && (ignore==="topic" || !S.topic.size || n.topics.some(t => S.topic.has(t)))
       && (!q || (n.title + " " + n.summary).toLowerCase().includes(q)));
@@ -334,6 +337,10 @@ function imgFail(el){
       });
     };
     mk($("fs"), D.sources || [], S.src, "src", "source");
+    const origins = [...new Set(D.items.map(n => n.origin).filter(Boolean))]
+      .sort((a,b) => D.items.filter(n => n.origin === b).length - D.items.filter(n => n.origin === a).length);
+    $("origin-wrap").hidden = !origins.length;
+    mk($("fo"), origins, S.origin, "origin", "origin");
     mk($("fc"), D.companies, S.comp, "comp", "companies");
     mk($("ft"), D.topics, S.topic, "topic", "topics");
   }
@@ -346,7 +353,7 @@ function imgFail(el){
     const sc = n.source === "DIGITIMES" ? "dg" : n.source === "優分析" ? "ua" : n.source === "財訊" ? "wl" : n.source === "IEK" ? "ik" : "";
     return `<article class="card">${img}<div class="body">
       <div class="top"><span class="dt">${n.date ? esc(n.date.replace(/-/g, "/")) : "日期待抓取"}</span>
-        <span class="src ${sc}">${esc(n.source)}${n.author && n.author !== n.source ? "／" + esc(n.author) : ""}</span>
+        <span class="src ${sc}">${n.origin && n.origin !== n.source ? esc(n.origin) + "（經 " + esc(n.source) + "）" : esc(n.source) + (n.author && n.author !== n.source ? "／" + esc(n.author) : "")}</span>
         ${n.paywall_hint ? '<span class="pay">摘要需訂閱</span>' : ""}</div>
       <a class="t" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
       ${n.summary ? `<p class="sum">${esc(n.summary)}</p>` : '<div style="height:8px"></div>'}
@@ -355,7 +362,7 @@ function imgFail(el){
   }
 
   function updateToggle(){
-    const n = S.src.size + S.comp.size + S.topic.size;
+    const n = S.src.size + S.origin.size + S.comp.size + S.topic.size;
     const open = mobile() ? document.body.classList.contains("sheet") : !document.body.classList.contains("nofilter");
     $("ftoggle").innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg>${open && !mobile() ? "收合篩選" : "篩選"}` + (n ? `<span class="n">${n}</span>` : "");
     $("ftoggle").setAttribute("aria-expanded", open);
@@ -366,7 +373,7 @@ function imgFail(el){
     const parts = [];
     if(S.q.trim()) parts.push(`<button class="af k" data-t="q">搜尋「${esc(S.q.trim())}」<span class="x">×</span></button>`);
     if(S.range !== 90) parts.push(`<button class="af k" data-t="range">${RANGE_TXT[S.range]}<span class="x">×</span></button>`);
-    [["src",S.src],["comp",S.comp],["topic",S.topic]].forEach(([t,set]) =>
+    [["src",S.src],["origin",S.origin],["comp",S.comp],["topic",S.topic]].forEach(([t,set]) =>
       set.forEach(v => parts.push(`<button class="af" data-t="${t}" data-v="${esc(v)}">${esc(v)}<span class="x">×</span></button>`)));
     const A = $("active");
     if(!parts.length){ A.innerHTML = ""; return; }
@@ -375,7 +382,7 @@ function imgFail(el){
       const t = b.dataset.t, v = b.dataset.v;
       if(t === "q"){ S.q = ""; $("q").value = ""; }
       else if(t === "range"){ S.range = 90; $("range").value = "90"; }
-      else ({src:S.src, comp:S.comp, topic:S.topic})[t].delete(v);
+      else ({src:S.src, origin:S.origin, comp:S.comp, topic:S.topic})[t].delete(v);
       render();
     });
     A.querySelector(".clr").onclick = () => $("clear").click();
@@ -436,7 +443,7 @@ function imgFail(el){
     tt.onclick = () => window.scrollTo({top:0, behavior:"smooth"});
     $("q").oninput = e => { S.q = e.target.value; render(); };
     $("range").onchange = e => { S.range = +e.target.value; render(); };
-    $("clear").onclick = () => { S.src.clear(); S.comp.clear(); S.topic.clear(); S.q=""; $("q").value=""; S.range=90; $("range").value="90"; render(); };
+    $("clear").onclick = () => { S.origin.clear(); S.src.clear(); S.comp.clear(); S.topic.clear(); S.q=""; $("q").value=""; S.range=90; $("range").value="90"; render(); };
     // 精簡清單：記住每台裝置的選擇
     const ICON_LIST = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
     const ICON_CARD = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/></svg>';

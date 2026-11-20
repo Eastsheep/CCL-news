@@ -159,6 +159,8 @@ SOURCES = [
         ],
         "article_re": r"ieknet\.iek\.org\.tw/ieknews/news_(?:open|more)\.aspx\?[^\"'#\s]*nsl_id=([0-9a-f]{32})",
         "canonical": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id={id}",
+        # IEK 產業新聞多為媒體授權轉載，頁面上標有原始媒體與記者
+        "origin_selector": 'li[title="媒體、記者"]',
         # 2026-11-20 以搜尋引擎找到的 IEK CCL 相關產業新聞
         "seeds": [
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4268569d682443fcbe58d192adb8a2ca",  # 使用者指定
