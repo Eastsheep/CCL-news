@@ -144,6 +144,39 @@ SOURCES = [
             "https://www.wealth.com.tw/articles/cc2ad79b-0f77-42e3-a80e-f67f281a05bf",
         ],
     },
+    {
+        "name": "IEK",
+        "domain": "ieknet.iek.org.tw",
+        # 工研院產科國際所 IEK 產業情報網的「產業新聞」（公開可讀）；產業報告需會員，不抓。robots.txt 為空（全站允許）
+        "list_pages": [
+            "https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&indu_idno=1",   # 半導體
+            "https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&indu_idno=16",  # 電子零組件
+            "https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&indu_idno=7",
+        ],
+        "article_re": r"ieknet\.iek\.org\.tw/ieknews/news_(?:open|more)\.aspx\?[^\"'#\s]*nsl_id=([0-9a-f]{32})",
+        "canonical": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id={id}",
+        # 2026-11-20 以搜尋引擎找到的 IEK CCL 相關產業新聞
+        "seeds": [
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c01c239264554e9792c27a7a1e5dc618",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c8b3e728db394c5eafc260b4ab920ef3",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=986482cb4ddc498b92a0470f1ac42e86",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=cc024e0bafb7407287b421690d2b20ee",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=d71a350b63b847f4b8e565ba3ed95b7f",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=8fe7c1bcdb4b471fabbe9a439276130e",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=35deefbb8501438db404615d50e860c7",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=8d6ef1f0f8f0445fb7432db9ca2bf1d6",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=b38c89781d264b54868671d3180e2fb6",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=f292fab2758a4a8db62372ec7f998002",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c1bc7702cd21439bb4dc91fa4eeeef7a",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=e47794fc0cd546fc9824c16efc57af53",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=10dbfcd6b2e146b5a0f6ac9359ae4924",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4d041339800f4ef1bda3244fedb0bc01",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=ea4f43db114644b3b82270f8947a5b49",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c3be4ec9affd4d42a72f2a354cae3cfb",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=def8debbbf8f4bcea401301e8092937d",
+            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4d59481efe844a8e83b0214578ced8a8",
+        ],
+    },
 ]
 
 # 判斷「是否與 CCL 相關」：標題或摘要命中任一個才收錄

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""CCL 新聞爬蟲（DIGITIMES、優分析、財訊）
+"""CCL 新聞爬蟲（DIGITIMES、優分析、財訊、IEK）
 
 只抓公開可見的內容：標題、日期、連結、網站提供的摘要（meta description / 導言）。
 不抓付費全文，遵守 robots.txt，每次請求間隔 REQUEST_DELAY_SEC 秒。
@@ -218,7 +218,10 @@ def parse_article(url, html):
     soup = BeautifulSoup(html, "html.parser")
     title = _meta(soup, "og:title") or (soup.title.get_text(strip=True) if soup.title else "")
     title = re.sub(r"\s*[|｜\-–]\s*(DIGITIMES|優分析|Uanalyze|UAnalyze|財訊雙週刊|財訊).*$", "", title, flags=re.I).strip()
+    title = re.sub(r"\|.*【IEK產業情報網】\s*$", "", title).strip()  # IEK：「標題|產業別|產業新聞|產科國際所【IEK產業情報網】」
     summary = _meta(soup, "og:description", "description")
+    if "<" in summary:  # IEK 的 meta description 裡夾著 HTML 標籤
+        summary = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
     if len(summary) < 30:
         # 退而求其次：取內文第一段（通常是公開導言）
         for p in soup.select("article p, .main_p p, #newsText p, p"):
