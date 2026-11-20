@@ -8,6 +8,4 @@ jobs:
     steps:
       - run: |
           UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36 CCLNewsBot/0.1 (internal research)"
-          curl -sSL -A "$UA" https://www.ctee.com.tw/rss_web/livenews/ctee | head -c 2500; echo
-          curl -sSL -A "$UA" https://money.udn.com/money/story/5612/9825897 -o u.html; grep -oE '<meta[^>]+(date|time)[^>]*>|<time[^>]*>[^<]*' u.html | head -5; grep -oE '20[0-9]{2}[/-][0-9]{2}[/-][0-9]{2} [0-9]{2}:[0-9]{2}' u.html | head -3
-          sleep 3; curl -sSL -A "$UA" "https://money.udn.com/search/result/1001/CCL" -o s.html; grep -oE 'money/story/[0-9]+/[0-9]+[^"]*"[^>]*>' s.html | head -3; grep -oE '<h3[^>]*>[^<]{0,80}' s.html | head -3
+          for f in livenews/ctee livenews/all livenews/industry livenews/tech livenews/stock news/industry industry/tech livenews/60042; do sleep 3; c=$(curl -sSL -A "$UA" "https://www.ctee.com.tw/rss_web/$f" -o r.xml -w "%{http_code}"); echo "RSS $f $c items:$(grep -c '<item>' r.xml) oldest:$(grep -oE '<pubDate>[^<]+' r.xml | tail -1)"; done
