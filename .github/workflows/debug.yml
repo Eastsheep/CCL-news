@@ -1,0 +1,21 @@
+name: debug-dt
+on:
+  push:
+    branches: [debug-dt]
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36 CCLNewsBot/0.1 (internal research)"
+          C=https://www.ctee.com.tw
+          echo "=== robots"; curl -sSL -A "$UA" $C/robots.txt | head -40
+          echo "=== article"; curl -sSL -A "$UA" "$C/news/20261028700247-430502" -o a.html -w "%{http_code}\n"; wc -c a.html
+          grep -oE '<title>[^<]*|<meta[^>]+(og:|description|published|author)[^>]*>' a.html | cut -c1-250 | head -14
+          grep -c 'application/ld+json' a.html; grep -oiE '付費|會員專屬|訂閱|paywall|premium' a.html | sort | uniq -c
+          for u in "$C/" "$C/tag/CCL" "$C/search?q=CCL" "$C/search?keyword=CCL" "$C/tag/銅箔基板" "$C/livenews/ctee" "$C/category/news/tech"; do sleep 3; c=$(curl -sSL -A "$UA" "$u" -o l.html -w "%{http_code}"); echo "== $u $c $(wc -c <l.html) links:$(grep -oE '/news/20[0-9]{11}-[0-9]{6}' l.html | sort -u | wc -l)"; done
+          grep -oE 'href="/[a-z]+(/[^"]{0,40})?"' l.html | sort -u | head -0
+          curl -sSL -A "$UA" "$C/" -o h.html; grep -oE 'href="(https://www.ctee.com.tw)?/(tag|category|list|livenews|search)[^"]*"' h.html | sort -u | head -30
+          echo "=== IEK source"; curl -sSL -A "$UA" "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4268569d682443fcbe58d192adb8a2ca" -o i.html
+          sed -e 's/<[^>]*>/ /g' i.html | tr -s ' \n' | grep -n -E '工商|來源|出處|經濟日報|時報' | cut -c1-200 | head
+          grep -n -E '工商時報' i.html | cut -c1-300 | head -5
