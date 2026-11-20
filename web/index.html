@@ -293,6 +293,7 @@ function imgFail(el){
     if(location.protocol.startsWith("http")){
       try{ const r = await fetch("news.json?t=" + Date.now(), {cache:"no-store"}); if(r.ok) D = await r.json(); }catch(e){}
     }
+    if(D) D.items.forEach(n => { if(n.origin) n.origin = n.origin.replace(/^[《〈「]|[》〉」]$/g, ""); });
     if(!D){ $("sub").textContent = "資料載入失敗，請重新整理頁面。"; $("list").textContent = "資料載入失敗，請重新整理頁面。"; return; }
     $("sub").innerHTML = `最後更新 <b>${esc(D.updated_at)}</b>　·　來源：${esc((D.sources||[]).join("、"))}`;
     $("list").className = "";

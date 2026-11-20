@@ -251,7 +251,7 @@ def parse_article(url, html):
         # 轉載站（IEK）：記下原始媒體，例如「工商時報，李娟萍／台北報導」→ 工商時報
         tag = soup.select_one(source_of(url)["origin_selector"])
         if tag:
-            origin = re.split(r"[，,／/\s]", tag.get_text(" ", strip=True))[0]
+            origin = re.split(r"[，,／/\s]", tag.get_text(" ", strip=True))[0].strip("《》〈〉「」")
     return {
         "origin": origin,
         "id": item_key(url),
@@ -347,6 +347,8 @@ def run():
 
     # 設定檔改過後，舊資料也重新分類
     for item in existing.values():
+        if item.get("origin"):
+            item["origin"] = item["origin"].strip("《》〈〉「」")
         item["companies"], item["topics"] = classify(item["title"] + " " + item["summary"])
     save(existing)
     if _browser is not None:
