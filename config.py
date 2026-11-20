@@ -145,39 +145,43 @@ SOURCES = [
         ],
     },
     {
-        "name": "IEK",
-        "domain": "ieknet.iek.org.tw",
-        # 工研院產科國際所 IEK 產業情報網的「產業新聞」（公開可讀）；產業報告需會員，不抓。robots.txt 為空（全站允許）
-        "list_pages": [],
-        # 分類列表一頁只有 10 則，半導體一天就超過 10 則，所以往後多翻幾頁（{p} = 頁碼）
-        # 一次性補舊文可在手動執行時設 BACKFILL_PAGES（例如 40）
-        "paged_lists": [
-            ("https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&domain=0&indu_idno=1&currentPageIndex={p}", 5),   # 半導體
-            ("https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&domain=0&indu_idno=2&currentPageIndex={p}", 3),   # 零組件及材料
-            ("https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&domain=0&indu_idno=16&currentPageIndex={p}", 3),  # 電子材料
-            ("https://ieknet.iek.org.tw/ieknews/default.aspx?actiontype=ieknews&domain=0&indu_idno=7&currentPageIndex={p}", 2),   # 石化材料
+        "name": "工商時報",
+        "domain": "ctee.com.tw",
+        # 工商時報網站擋自動程式（robots.txt 封鎖 AI 爬蟲、列表頁回 403），所以不開文章頁，
+        # 只讀官方 RSS（標題、連結、摘要、時間都在 RSS 裡）
+        "rss_feeds": [
+            "https://www.ctee.com.tw/rss_web/livenews/tech",
+            "https://www.ctee.com.tw/rss_web/livenews/industry",
+            "https://www.ctee.com.tw/rss_web/livenews/stock",
+            "https://www.ctee.com.tw/rss_web/livenews/ctee",
         ],
-        "article_re": r"ieknet\.iek\.org\.tw/ieknews/news_(?:open|more)\.aspx\?[^\"'#\s]*nsl_id=([0-9a-f]{32})",
-        "canonical": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id={id}",
-        # IEK 產業新聞多為媒體授權轉載，頁面上標有原始媒體與記者
-        "origin_selector": 'li[title="媒體、記者"]',
-        # 2026-11-20 以搜尋引擎找到的 IEK CCL 相關產業新聞
+        "article_re": r"ctee\.com\.tw/news/(\d{14})",
+        "canonical": "https://www.ctee.com.tw/news/{id}",
+        "seeds": [],
+    },
+    {
+        "name": "經濟日報",
+        "domain": "money.udn.com",
+        # robots.txt 一般爬蟲允許（只擋 AI 訓練用機器人）；用站內搜尋頁找文章
+        "search_pages": ["https://money.udn.com/search/result/1001/{q}"],
+        "search_terms": ["CCL", "銅箔基板", "玻纖布"],
+        "article_re": r"money\.udn\.com/money/story/(\d+/\d+)",
+        "canonical": "https://money.udn.com/money/story/{id}",
+        "seeds": [],
+    },
+    {
+        "name": "中央社",
+        "domain": "cna.com.tw",
+        # robots.txt 一般爬蟲允許，但禁止站內搜尋頁，所以只看產經新聞列表
+        "list_pages": ["https://www.cna.com.tw/list/afe.aspx"],
+        "article_re": r"cna\.com\.tw/news/([a-z]+/\d{12})\.aspx",
+        "canonical": "https://www.cna.com.tw/news/{id}.aspx",
+        # 2026-11-20 以搜尋引擎找到的中央社 CCL 相關新聞
         "seeds": [
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4268569d682443fcbe58d192adb8a2ca",  # 使用者指定
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c01c239264554e9792c27a7a1e5dc618",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=cc024e0bafb7407287b421690d2b20ee",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=d71a350b63b847f4b8e565ba3ed95b7f",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=8d6ef1f0f8f0445fb7432db9ca2bf1d6",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=b38c89781d264b54868671d3180e2fb6",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=f292fab2758a4a8db62372ec7f998002",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c1bc7702cd21439bb4dc91fa4eeeef7a",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=e47794fc0cd546fc9824c16efc57af53",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=10dbfcd6b2e146b5a0f6ac9359ae4924",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4d041339800f4ef1bda3244fedb0bc01",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=ea4f43db114644b3b82270f8947a5b49",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c3be4ec9affd4d42a72f2a354cae3cfb",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=def8debbbf8f4bcea401301e8092937d",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4d59481efe844a8e83b0214578ced8a8",
+            "https://www.cna.com.tw/news/afe/202610200326.aspx",
+            "https://www.cna.com.tw/news/afe/202604090117.aspx",
+            "https://www.cna.com.tw/news/afe/202511120122.aspx",
+            "https://www.cna.com.tw/news/afe/202505060278.aspx",
         ],
     },
 ]

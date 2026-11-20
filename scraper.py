@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""CCL 新聞爬蟲（DIGITIMES、優分析、財訊、IEK）
+"""CCL 新聞爬蟲（DIGITIMES、優分析、財訊、工商時報 RSS、經濟日報、中央社）
 
 只抓公開可見的內容：標題、日期、連結、網站提供的摘要（meta description / 導言）。
 不抓付費全文，遵守 robots.txt，每次請求間隔 REQUEST_DELAY_SEC 秒。
@@ -218,7 +218,7 @@ def parse_article(url, html):
     soup = BeautifulSoup(html, "html.parser")
     title = _meta(soup, "og:title") or (soup.title.get_text(strip=True) if soup.title else "")
     title = re.sub(r"\s*[|｜\-–]\s*(DIGITIMES|優分析|Uanalyze|UAnalyze|財訊雙週刊|財訊).*$", "", title, flags=re.I).strip()
-    title = re.sub(r"\|.*【IEK產業情報網】\s*$", "", title).strip()  # IEK：「標題|產業別|產業新聞|產科國際所【IEK產業情報網】」
+    title = re.sub(r"\s*\|[^|]*(\|[^|]*)*\|\s*(經濟日報|中央社 CNA)\s*$", "", title).strip()  # 「標題 | 分類 | 經濟日報」
     summary = _meta(soup, "og:description", "description")
     if "<" in summary:  # IEK 的 meta description 裡夾著 HTML 標籤
         summary = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
@@ -313,6 +313,41 @@ def run():
             kept = {u: t for u, t in links.items() if matches(t, config.RELEVANCE_TERMS)}
             log(f"[list] {src['name']} {page} -> {len(links)} 篇連結，相關 {len(kept)}")
             candidates.update(kept)
+
+    # 只讀 RSS 的來源（不開文章頁）：直接用 RSS 內容建立資料
+    for src in config.SOURCES:
+        if only and src["name"] not in only:
+            continue
+        for feed in src.get("rss_feeds", []):
+            xml = fetch(feed)
+            if not xml:
+                continue
+            soup = BeautifulSoup(xml, "html.parser")
+            kept = 0
+            for it in soup.find_all("item"):
+                link = (it.find("link").next_sibling or "").strip() if it.find("link") and not it.find("link").get_text(strip=True) else (it.find("link").get_text(strip=True) if it.find("link") else "")
+                title = it.find("title").get_text(strip=True) if it.find("title") else ""
+                desc = re.sub(r"\s+", " ", BeautifulSoup(it.find("description").get_text() if it.find("description") else "", "html.parser").get_text(" ", strip=True))
+                key = item_key(link)
+                if not key or not title or key in existing or not matches(title + " " + desc, config.RELEVANCE_TERMS):
+                    continue
+                pub = it.find("pubdate") or it.find("pubDate")
+                m = DATE_RES[0].search(pub.get_text() if pub else "")
+                existing[key] = {
+                    "origin": "", "id": key, "title": title,
+                    "date": datetime(*map(int, m.groups())).strftime("%Y-%m-%d") if m else "",
+                    "url": link, "summary": desc[:300], "source": src["name"],
+                    "author": "", "image": "", "paywall_hint": not desc,
+                    "fetched_at": datetime.now(TW).strftime("%Y-%m-%d %H:%M"),
+                }
+                kept += 1
+                log(f"[ok] {existing[key]['date']} {title[:50]}")
+            log(f"[rss] {src['name']} {feed} -> 相關新文章 {kept}")
+
+    # 已從設定移除的來源，資料一併刪掉
+    names = {x["name"] for x in config.SOURCES}
+    for k in [k for k, n in existing.items() if n["source"] not in names]:
+        del existing[k]
 
     new = [u for u in candidates if item_key(u) and item_key(u) not in existing]
     # 舊資料還沒有圖片欄位的，順便補抓（新文章優先）
