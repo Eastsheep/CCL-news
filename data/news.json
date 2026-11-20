@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20 13:36",
+ "updated_at": "2026-11-20 14:19",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -32,6 +32,7 @@
  ],
  "items": [
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:25621f3d75544c9699fe6f3ad42cbecb",
    "title": "台光電澄清：輝達營收占比未逾2成",
    "date": "2026-11-18",
@@ -187,6 +188,7 @@
    "fetched_at": "2026-11-14 01:48"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:24dfe6dbc8bf41ae885f9c2cc21e070b",
    "title": "元太、台虹聯手 攻PTFE材料",
    "date": "2026-11-13",
@@ -257,6 +259,7 @@
    "fetched_at": "2026-11-13 02:21"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:52962cb6010a476088b088b75ef6a2ce",
    "title": "南亞投資115億元興建玻纖布5廠　擴大電子材料布局",
    "date": "2026-11-12",
@@ -363,6 +366,7 @@
    "fetched_at": "2026-11-10 11:17"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:7881ebf3a9994a6d805f438739d3f3c2",
    "title": "CCL  大咖工廠爆炸 台廠迎轉單",
    "date": "2026-11-05",
@@ -385,6 +389,7 @@
    "fetched_at": "2026-11-20 13:34"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:0880fed68600405780ab98f63cb96da2",
    "title": "PTFE扮利器 台郡拚明年轉盈",
    "date": "2026-11-05",
@@ -419,6 +424,7 @@
    "fetched_at": "2026-11-10 02:23"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:85d3d2a07aa14fbebd82072a1aa013d6",
    "title": "台郡：明年首季拚轉盈　預計2028年PTFE量產",
    "date": "2026-11-04",
@@ -437,6 +443,7 @@
    "fetched_at": "2026-11-20 13:34"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:7ca65afc5d1f421b8318a0c33ca9e841",
    "title": "騰輝 2.7 元 冠西電 -0.05 元",
    "date": "2026-11-04",
@@ -456,6 +463,7 @@
    "fetched_at": "2026-11-20 13:34"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:240aa5ff853d483288f16fad51272aa9",
    "title": "台玻砸90億 擴高階玻纖布產能",
    "date": "2026-11-03",
@@ -553,6 +561,7 @@
    "fetched_at": "2026-11-10 02:23"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:708aea28f3b04df7a02a174a1c439c7b",
    "title": "台光電目標價 外資喊11,700",
    "date": "2026-10-30",
@@ -613,6 +622,7 @@
    "fetched_at": "2026-11-10 02:25"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:74d34ab877f7441fb34295bab66f5a21",
    "title": "台光電82.92元 台燿25.41元",
    "date": "2026-10-29",
@@ -633,6 +643,7 @@
    "fetched_at": "2026-11-20 13:34"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:3053ae04573947719adfd23e6c348c2c",
    "title": "台光電、台燿Q3 EPS大豐收",
    "date": "2026-10-29",
@@ -713,6 +724,7 @@
    "fetched_at": "2026-11-10 02:23"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:4268569d682443fcbe58d192adb8a2ca",
    "title": "高階CCL 三雄升級加速",
    "date": "2026-10-28",
@@ -736,6 +748,7 @@
    "fetched_at": "2026-11-20 13:34"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:a1f74cc0f50242acb0b9e584457b07be",
    "title": "騰輝泰國新廠開幕",
    "date": "2026-10-27",
@@ -780,6 +793,7 @@
    "fetched_at": "2026-11-10 02:24"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:3f97a97dfe9d42599b5d6bd8461fa6d2",
    "title": "騰輝-KY啟用泰國新廠　昆山同步擴產15億元",
    "date": "2026-10-26",
@@ -876,6 +890,7 @@
    "fetched_at": "2026-11-10 02:24"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:d963883052db4bc9b212fcf4b5d1e246",
    "title": "高階CCL吃緊 三雄擴產搶料",
    "date": "2026-10-21",
@@ -901,6 +916,7 @@
    "fetched_at": "2026-11-20 13:34"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:acde2f8ef3fb4cf18859cc7912804696",
    "title": "高階CCL產能將缺到2029年",
    "date": "2026-10-21",
@@ -927,6 +943,7 @@
    "fetched_at": "2026-11-20 13:34"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:53fac36cb6434ef69d8131caa2940c83",
    "title": "聯茂旺到 2029",
    "date": "2026-10-21",
@@ -1064,6 +1081,7 @@
    "fetched_at": "2026-11-10 02:24"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:c335daf894ee4e0e93f01ad11f56de49",
    "title": "金居馬來西亞新廠攻高階銅箔HVLP4　年產能3萬噸",
    "date": "2026-10-20",
@@ -1083,6 +1101,7 @@
    "fetched_at": "2026-11-20 13:35"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:2d7a4c14bcac439fa64732b8986c9104",
    "title": "聯茂：高階材料需求旺到2029年　布局中國泰國擴產",
    "date": "2026-10-20",
@@ -1418,6 +1437,7 @@
    "fetched_at": "2026-11-10 02:24"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:7713124aaf9b4fbbae9151ab8289e49f",
    "title": "CCL漲風延燒 台供應鏈受惠",
    "date": "2026-10-14",
@@ -2334,6 +2354,7 @@
    "fetched_at": "2026-11-10 02:25"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:343f6563c3f34b28a5f3bc1b636e4c9f",
    "title": "CCL再漲價 南亞利多",
    "date": "2026-08-31",
@@ -2355,6 +2376,7 @@
    "fetched_at": "2026-11-20 13:35"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:91c1642f94f54667a5893b973387c2a8",
    "title": "陸廠吹漲風 CCL三雄添利多",
    "date": "2026-08-29",
@@ -2552,6 +2574,7 @@
    "fetched_at": "2026-11-10 11:17"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:123afc55ce7b41ac82abccfd62685bf3",
    "title": "玻纖布漲不停 台鏈旺到2027",
    "date": "2026-08-11",
@@ -2610,6 +2633,7 @@
    "fetched_at": "2026-11-10 02:25"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:08742efa354948a78393e8fabb66f125",
    "title": "CCL紅火 化工廠擴產搶商機",
    "date": "2026-08-06",
@@ -2653,6 +2677,7 @@
    "fetched_at": "2026-11-10 02:33"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:993f82be5979424284e465e5ae7ea779",
    "title": "台光電 登銅箔基板全球龍頭",
    "date": "2026-08-03",
@@ -2861,6 +2886,7 @@
    "fetched_at": "2026-11-10 11:03"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:4a6abe7d12974b92a055147d5bfe0160",
    "title": "富喬玻纖布價格上調",
    "date": "2026-07-01",
@@ -2940,6 +2966,7 @@
    "fetched_at": "2026-11-10 11:02"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:d03880b4a6b84f87ad08e1034f7a6534",
    "title": "台玻：玻纖布缺貨到明年",
    "date": "2026-06-13",
@@ -3150,6 +3177,7 @@
    "fetched_at": "2026-11-10 11:17"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:0baa669a5e9743ee8ca7f82ea62dd51f",
    "title": "崇越高階石英布打入CCL供應鏈　拉第2成長曲線",
    "date": "2026-05-21",
@@ -3241,6 +3269,7 @@
    "fetched_at": "2026-11-10 11:17"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:4d041339800f4ef1bda3244fedb0bc01",
    "title": "台玻搶AI 高階玻纖布擴產",
    "date": "2026-05-12",
@@ -3297,6 +3326,7 @@
    "fetched_at": "2026-11-10 02:32"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:f816340bb98e476bb6d3c93699c1a082",
    "title": "CCL三雄4月營收攀峰",
    "date": "2026-05-06",
@@ -3602,6 +3632,7 @@
    "fetched_at": "2026-11-10 11:04"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:ea4f43db114644b3b82270f8947a5b49",
    "title": "台玻成功轉型 大啖AI商機",
    "date": "2026-03-01",
@@ -3622,6 +3653,7 @@
    "fetched_at": "2026-11-20 13:19"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:69476390770f41d2baca57b168017d19",
    "title": "CCL、半固化片漲價 台廠有望轉嫁成本",
    "date": "2026-03-01",
@@ -3656,6 +3688,7 @@
    "fetched_at": "2026-11-11 08:48"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:4d59481efe844a8e83b0214578ced8a8",
    "title": "搭上AI浪潮走出谷底　欣興：玻纖布供不應求今年不會解決",
    "date": "2026-02-25",
@@ -3674,6 +3707,7 @@
    "fetched_at": "2026-11-20 13:19"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:c3be4ec9affd4d42a72f2a354cae3cfb",
    "title": "陸玻纖布再掀漲價潮",
    "date": "2026-02-23",
@@ -3824,6 +3858,7 @@
    "fetched_at": "2026-11-10 02:25"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:420bb008bee94203842927243f9cc278",
    "title": "台CCL廠醞釀價格調整",
    "date": "2025-12-29",
@@ -3868,6 +3903,7 @@
    "fetched_at": "2026-11-10 02:25"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:89340735581949dfabdb91b44da7e616",
    "title": "台光電加碼投資 卡位高階CCL",
    "date": "2025-12-24",
@@ -3887,6 +3923,7 @@
    "fetched_at": "2026-11-20 13:35"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:3b8f8bb7379d45f2971e798927a67c07",
    "title": "台光電大陸子公司擴廠",
    "date": "2025-12-24",
@@ -3906,6 +3943,7 @@
    "fetched_at": "2026-11-20 13:35"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:95583225a5ab4ca6b759d2bc493b8d6c",
    "title": "雙鍵切入高階CCL材料鏈",
    "date": "2025-12-15",
@@ -3968,6 +4006,7 @@
    "fetched_at": "2026-11-10 11:02"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:35d5149484e04d41b2226f8e9e9b10b5",
    "title": "高階玻纖布需求旺 台玻進補",
    "date": "2025-12-02",
@@ -3987,6 +4026,7 @@
    "fetched_at": "2026-11-20 13:35"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:cc024e0bafb7407287b421690d2b20ee",
    "title": "台虹新式CCL 攻M9世代",
    "date": "2025-12-01",
@@ -4007,6 +4047,7 @@
    "fetched_at": "2026-11-20 13:19"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:3670ed4451544158b0ca948f69cf6732",
    "title": "南亞攜日企 攻特殊玻纖布",
    "date": "2025-11-29",
@@ -4027,6 +4068,7 @@
    "fetched_at": "2026-11-20 13:35"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:e24aa26eb7944236932fcade6ad17b95",
    "title": "需求升溫 南亞CCL要漲價了",
    "date": "2025-11-28",
@@ -4049,6 +4091,7 @@
    "fetched_at": "2026-11-20 13:36"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:20909772a11a45b7b96c56483ad6f27d",
    "title": "南亞攜手日東紡　投入特殊玻纖布策略合作",
    "date": "2025-11-28",
@@ -4069,6 +4112,7 @@
    "fetched_at": "2026-11-20 13:35"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:f292fab2758a4a8db62372ec7f998002",
    "title": "高階CCL、玻纖布、銅箔 需求旺 台光電、富喬、金居等將成贏家",
    "date": "2025-11-27",
@@ -4092,6 +4136,7 @@
    "fetched_at": "2026-11-20 13:19"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:073ec33b97f24b0ba6d7e1dcb2f5eac1",
    "title": "南亞調漲CCL和PP售價　台塑四寶股價強漲",
    "date": "2025-11-27",
@@ -4111,6 +4156,7 @@
    "fetched_at": "2026-11-20 13:36"
   },
   {
+   "origin": "《經濟日報》",
    "id": "ieknet.iek.org.tw:e47794fc0cd546fc9824c16efc57af53",
    "title": "台玻訂單 接到2027年",
    "date": "2025-11-21",
@@ -4208,6 +4254,7 @@
    "fetched_at": "2026-11-10 02:32"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:3d598fd70f564402a55ded2c1d519d3c",
    "title": "AI啟動銅箔基板需求　聯茂：M9材料已通過認證",
    "date": "2025-11-07",
@@ -4248,6 +4295,7 @@
    "fetched_at": "2026-11-10 02:34"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:b38c89781d264b54868671d3180e2fb6",
    "title": "台光電 卡位M9新世代材料",
    "date": "2025-11-03",
@@ -4359,6 +4407,7 @@
    "fetched_at": "2026-11-10 02:32"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:d71a350b63b847f4b8e565ba3ed95b7f",
    "title": "TPCA Show暖場 材料戰先開打",
    "date": "2025-10-20",
@@ -4378,6 +4427,7 @@
    "fetched_at": "2026-11-20 13:19"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:8d6ef1f0f8f0445fb7432db9ca2bf1d6",
    "title": "AI伺服器點火 PCB供應鏈升溫",
    "date": "2025-10-02",
@@ -4436,6 +4486,7 @@
    "fetched_at": "2026-11-10 02:32"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:10dbfcd6b2e146b5a0f6ac9359ae4924",
    "title": "日東紡擴產玻纖布　專家：台廠爭取訂單迎轉型契機",
    "date": "2025-09-02",
@@ -4496,6 +4547,7 @@
    "fetched_at": "2026-11-10 11:04"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:c1bc7702cd21439bb4dc91fa4eeeef7a",
    "title": "高階玻纖布 中長期需求確立",
    "date": "2025-08-27",
@@ -4569,6 +4621,7 @@
    "fetched_at": "2026-11-11 08:49"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:c01c239264554e9792c27a7a1e5dc618",
    "title": "CCL漲潮來了 台廠三猛將熱身",
    "date": "2025-08-18",
@@ -4608,6 +4661,7 @@
    "fetched_at": "2026-11-10 11:17"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:d938e61380764cc5ae4ce0c955334ab5",
    "title": "尖點鑽針需求大增  聯茂估AI營收跳升",
    "date": "2025-08-08",
@@ -4665,6 +4719,7 @@
    "fetched_at": "2026-11-10 02:32"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:a48d24f14e12433cb50d20a1b9aed3f6",
    "title": "CCL三雄 6月營收再攀高峰",
    "date": "2025-07-08",
@@ -5097,6 +5152,7 @@
    "fetched_at": "2026-11-10 11:04"
   },
   {
+   "origin": "工商時報",
    "id": "ieknet.iek.org.tw:c728d32c05374789a5f595ec2398c476",
    "title": "銅價飆升 CCL廠漲勢蠢動",
    "date": "2024-05-23",
@@ -5117,6 +5173,7 @@
    "fetched_at": "2026-11-20 13:36"
   },
   {
+   "origin": "中央社",
    "id": "ieknet.iek.org.tw:8226e8c296ba40629af0a56431ad8d60",
    "title": "銅價飆中國銅箔基板傳漲價 台灣CCL廠：尚在評估階段",
    "date": "2024-05-22",
@@ -5523,6 +5580,7 @@
    "fetched_at": "2026-11-10 11:02"
   },
   {
+   "origin": "《聯合晚報》",
    "id": "ieknet.iek.org.tw:def8debbbf8f4bcea401301e8092937d",
    "title": "5G商機亮 聯茂、台燿、台光電 CCL三雄泛幽光",
    "date": "2019-10-18",
