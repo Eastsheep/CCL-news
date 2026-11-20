@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20 16:50",
+ "updated_at": "2026-11-21 02:39",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -35,6 +35,23 @@
  "items": [
   {
    "origin": "",
+   "id": "money.udn.com:5612/9891855",
+   "title": "南寶法說會／全年營收獲利有望再創高 拚跨足先進封裝、CCL 材料",
+   "date": "2026-11-20",
+   "url": "https://money.udn.com/money/story/5612/9891855",
+   "summary": "南寶（4766）20日召開第3季法人說明會，董事長暨執行長黃映霖表示，今年前十月營收已達雙位數成長，全年營收與獲利可望再創新高。明年在持續拓展新產品與應用下，力拚續創新高。",
+   "source": "經濟日報",
+   "author": "經濟日報",
+   "image": "https://money.udn.com/static/img/moneyudn.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-21 02:39"
+  },
+  {
+   "origin": "",
    "id": "ctee.com.tw:20261120701241",
    "title": "今年獲利挑戰新高！南寶成立「半導體產業發展部」 聚焦光電材料、半導體材料及CCL材料",
    "date": "2026-11-20",
@@ -49,6 +66,26 @@
    "topics": [
     "營收 / 財報"
    ]
+  },
+  {
+   "origin": "",
+   "id": "cna.com.tw:afe/202611200276",
+   "title": "PCB載板散熱淪多頭重災區　台光電、欣興湧賣壓跌停",
+   "date": "2026-11-20",
+   "url": "https://www.cna.com.tw/news/afe/202611200276.aspx",
+   "summary": "人工智慧（AI）利空頻傳，市場信心潰堤，台股今天終場大跌2393.6點或6.23%，收在36033.29點，創下近7個月新低及史上第3大收盤跌點；先前漲幅已高的印刷電路板（PCB）、IC載板及散熱族群成為資金提款與多殺多的重災區，本週湧現沉重賣壓。",
+   "source": "中央社",
+   "author": "中央通訊社",
+   "image": "https://imgcdn.cna.com.tw/www/images/pic_fb.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電"
+   ],
+   "topics": [
+    "漲價 / 報價",
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-21 02:39"
   },
   {
    "origin": "",
