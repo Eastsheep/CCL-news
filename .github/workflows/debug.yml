@@ -9,10 +9,6 @@ jobs:
       - run: |
           UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36 CCLNewsBot/0.1 (internal research)"
           B=https://ieknet.iek.org.tw
-          curl -sSI -A "$UA" $B/robots.txt | head -3
-          curl -sSL -A "$UA" $B/ieknews/ -o h.html
-          grep -oE 'href="[^"#]*"' h.html | grep -viE 'nsl_id|\.(css|js|png|jpg|ico)' | sort -u | head -60
-          for u in "$B/ieknews/news_more.aspx?actiontype=ieknews&indu_idno=1" "$B/ieknews/news_more.aspx?actiontype=ieknews&indu_idno=16" "$B/ieknews/news_more.aspx?actiontype=ieknews&indu_idno=7"; do
-            sleep 3; curl -sSL -A "$UA" "$u" -o l.html; echo "== $u $(wc -c < l.html) links: $(grep -oE 'nsl_id=[0-9a-f]{32}' l.html | sort -u | wc -l)"
-            grep -oE 'nsl_id=[0-9a-f]{32}" title="[^"]+' l.html | head -4; grep -oE '20[0-9]{2}/[0-9]{1,2}/[0-9]{1,2}' l.html | head -3
+          for q in "news_open.aspx?nsl_id=c8b3e728db394c5eafc260b4ab920ef3" "news_open.aspx?actiontype=ieknews&indu_idno=1&nsl_id=c8b3e728db394c5eafc260b4ab920ef3" "news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=c8b3e728db394c5eafc260b4ab920ef3" "news_open.aspx?nsl_id=986482cb4ddc498b92a0470f1ac42e86"; do
+            sleep 3; curl -sSL -A "$UA" "$B/ieknews/$q" -o x.html; echo "== $q $(wc -c < x.html)"; grep -oE '<title>[^<]*' x.html | head -2; grep -oE "var _title = '[^']*'" x.html
           done
