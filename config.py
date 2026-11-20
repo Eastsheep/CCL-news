@@ -158,12 +158,8 @@ SOURCES = [
         # 2026-11-20 以搜尋引擎找到的 IEK CCL 相關產業新聞
         "seeds": [
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c01c239264554e9792c27a7a1e5dc618",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c8b3e728db394c5eafc260b4ab920ef3",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=986482cb4ddc498b92a0470f1ac42e86",
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=cc024e0bafb7407287b421690d2b20ee",
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=d71a350b63b847f4b8e565ba3ed95b7f",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=8fe7c1bcdb4b471fabbe9a439276130e",
-            "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=35deefbb8501438db404615d50e860c7",
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=8d6ef1f0f8f0445fb7432db9ca2bf1d6",
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=b38c89781d264b54868671d3180e2fb6",
             "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=f292fab2758a4a8db62372ec7f998002",
