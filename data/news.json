@@ -1,9 +1,10 @@
 {
- "updated_at": "2026-11-20 11:13",
+ "updated_at": "2026-11-20 13:19",
  "sources": [
   "DIGITIMES",
   "優分析",
-  "財訊"
+  "財訊",
+  "IEK"
  ],
  "companies": [
   "台光電",
@@ -166,6 +167,23 @@
    "fetched_at": "2026-11-14 01:48"
   },
   {
+   "id": "ieknet.iek.org.tw:24dfe6dbc8bf41ae885f9c2cc21e070b",
+   "title": "元太、台虹聯手 攻PTFE材料",
+   "date": "2026-11-13",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=24dfe6dbc8bf41ae885f9c2cc21e070b",
+   "summary": "元太（8069）舉行法說，受消費性產品需求走弱影響，下修今年營收成長預期，由原先估計年增10％～15％，修正為9％。惟元太和台虹（8039）合作PTFE材料成為新焦點，董事長李政昊表示，將結合台虹技術及元太捲對捲（Roll-to-Roll）製程能力，預期2027年有機會貢獻營收，2028年放量",
+   "source": "IEK",
+   "author": "工商時報,袁顥庭／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "樹脂 / 添加劑",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
    "id": "digitimes.com.tw:774555",
    "title": "科技1分鐘：從不沾鍋走進AI伺服器　鐵氟龍PTFE切入高速傳輸",
    "date": "2026-11-13",
@@ -217,6 +235,24 @@
     "AI 伺服器 / 交換器"
    ],
    "fetched_at": "2026-11-13 02:21"
+  },
+  {
+   "id": "ieknet.iek.org.tw:52962cb6010a476088b088b75ef6a2ce",
+   "title": "南亞投資115億元興建玻纖布5廠　擴大電子材料布局",
+   "date": "2026-11-12",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=52962cb6010a476088b088b75ef6a2ce",
+   "summary": "（中央社記者曾仁凱台北2026年11月12日電）南亞（1303）擴大電子材料布局，11日董事會通過擬投資新台幣115.3億元，在彰化縣彰濱廠區興建玻纖布5廠，規劃年產1億公尺，月產約800萬至900萬公尺，重點生產薄布及超薄布。 另外南亞也對子公司台灣必成增資8億元，增設高",
+   "source": "IEK",
+   "author": "中央社,,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "南亞"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk"
+   ],
+   "fetched_at": "2026-11-20 13:19"
   },
   {
    "id": "uanalyze.com.tw:3310958941",
@@ -2667,6 +2703,25 @@
    "fetched_at": "2026-11-10 11:17"
   },
   {
+   "id": "ieknet.iek.org.tw:4d041339800f4ef1bda3244fedb0bc01",
+   "title": "台玻搶AI 高階玻纖布擴產",
+   "date": "2026-05-12",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4d041339800f4ef1bda3244fedb0bc01",
+   "summary": "全球瘋AI，帶動高階玻纖布需求旺盛，商機前景看多，台玻11日董事會通過正式啟動電子級高階玻纖布投資，計劃在桃園廠、鹿港廠進行窯爐增建及冷修投資案，預計投資金額約22.42億元，布局下一階段營運成長動能。 同時台玻董事會，出現第三代新成員，11日公告，法人董事台豐投資代表人，由台玻",
+   "source": "IEK",
+   "author": "工商時報,袁延壽／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
    "id": "digitimes.com.tw:0000754724_6Y46FPBD3ZJKPZ3PUQHIJ",
    "title": "AI引爆材料新賽局PCB產業迎雙重紅利　台廠搶當「第二來源」衝高階市場",
    "date": "2026-05-08",
@@ -2988,6 +3043,26 @@
    "fetched_at": "2026-11-10 11:04"
   },
   {
+   "id": "ieknet.iek.org.tw:ea4f43db114644b3b82270f8947a5b49",
+   "title": "台玻成功轉型 大啖AI商機",
+   "date": "2026-03-01",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=ea4f43db114644b3b82270f8947a5b49",
+   "summary": "台灣玻璃公司成立逾一甲子，近兩年在AI快速發展下，靠著電子級玻纖布成功轉型、大啖AI商機；高階玻纖布缺貨潮難解，產品報價水漲船高，去年第3季台玻營運虧轉盈，今年更朝全年獲利邁進，營運全速朝藍海航行，去年7月底至今股價跳躍式飆升。 台玻是創辦人林玉嘉在1964年創立，首廠落腳新竹，",
+   "source": "IEK",
+   "author": "《經濟日報》,記者 陳美玲,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "漲價 / 報價",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
    "id": "wealth.com.tw:cc8aeb61-653c-4843-affb-724eb806e93a",
    "title": "「玻纖布」缺料恐將貫穿2026全年！ 欣興：資本支出大舉上修至340億元",
    "date": "2026-02-26",
@@ -3003,6 +3078,41 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-11 08:48"
+  },
+  {
+   "id": "ieknet.iek.org.tw:4d59481efe844a8e83b0214578ced8a8",
+   "title": "搭上AI浪潮走出谷底　欣興：玻纖布供不應求今年不會解決",
+   "date": "2026-02-25",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=4d59481efe844a8e83b0214578ced8a8",
+   "summary": "（中央社記者江明晏台北2026年02月25日電）IC載板與PCB大廠欣興（3037）自2022年啟動PCB業務轉型奏效，隨著AI應用快速擴張，營運走出谷底。欣興看好，毛利率可望逐季走揚，且認為由於AI客戶需求強勁，玻纖布供不應求的狀況，2026年都不會解決。 欣興搭上AI應",
+   "source": "IEK",
+   "author": "中央社,,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "CPO / 載板",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
+   "id": "ieknet.iek.org.tw:c3be4ec9affd4d42a72f2a354cae3cfb",
+   "title": "陸玻纖布再掀漲價潮",
+   "date": "2026-02-23",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c3be4ec9affd4d42a72f2a354cae3cfb",
+   "summary": "陸媒引述供應商和業內人士預計，由於成本上升和供應緊張，大陸玻璃纖維（玻纖布）製造商將啟動新一輪漲價潮，計劃月度調價幅度為10%至15%，若按此節奏推進，到2026年底價格可能較當前翻倍，並將對電子產品及PCB產業鏈帶來連鎖影響。 值得注意的是，這一輪預期漲價並非從低位起步。202",
+   "source": "IEK",
+   "author": "《經濟日報》,記者謝守真／綜合報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "漲價 / 報價"
+   ],
+   "fetched_at": "2026-11-20 13:19"
   },
   {
    "id": "digitimes.com.tw:0000746667_DXZ5QUX473M3AU6YLI4GC",
@@ -3201,6 +3311,70 @@
    "fetched_at": "2026-11-10 11:02"
   },
   {
+   "id": "ieknet.iek.org.tw:cc024e0bafb7407287b421690d2b20ee",
+   "title": "台虹新式CCL 攻M9世代",
+   "date": "2025-12-01",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=cc024e0bafb7407287b421690d2b20ee",
+   "summary": "隨輝達新平台與自研ASIC伺服器導入速度加快，業界普遍預期高階PCB材料從HVLP銅箔、T-Glass玻纖布到Q-Glass石英布，在M9等級需求拉動下均將面臨更緊俏的供需環境，使供應鏈迫切尋找新解方。台虹（8039）以PTFE填料型銅箔基板（CCL）切入這缺口，以自主配方建立一條「不靠布」的",
+   "source": "IEK",
+   "author": "工商時報,楊絡懸／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "樹脂 / 添加劑",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
+   "id": "ieknet.iek.org.tw:f292fab2758a4a8db62372ec7f998002",
+   "title": "高階CCL、玻纖布、銅箔 需求旺 台光電、富喬、金居等將成贏家",
+   "date": "2025-11-27",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=f292fab2758a4a8db62372ec7f998002",
+   "summary": "輝達（NVIDIA）GB300、Google TPU V7、AWS Trainium3三大AI伺服器平台進入放量期，帶動高階CCL與玻纖布、銅箔等關鍵材料需求攀升。 法人分析，台光電、富喬、金居與日商日東紡成為少數同時「三吃」三大平台訂單的供應商，成為大贏家。 法人",
+   "source": "IEK",
+   "author": "工商時報,李娟萍／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "玻纖布廠",
+    "銅箔廠"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
+   "id": "ieknet.iek.org.tw:e47794fc0cd546fc9824c16efc57af53",
+   "title": "台玻訂單 接到2027年",
+   "date": "2025-11-21",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=e47794fc0cd546fc9824c16efc57af53",
+   "summary": "輝達宣告AI沒有泡沫，玻纖布供給愈趨吃緊。台玻（1802）昨（20）日召開法說會，AI浪潮帶動PCB升級，目前玻纖布市場需求暢旺，台玻產能滿載、訂單接到2027年，而明年新產能加入，旗下高階玻纖布營收將成長50%。 台玻表示，AI產業發展下，帶動電子級玻璃纖維布，其中一代、二代低",
+   "source": "IEK",
+   "author": "《經濟日報》,記者朱曼寧／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
    "id": "digitimes.com.tw:0000738906_DFJ8F7WC1HTVCZ5YTK8QB",
    "title": "台光電GB300運算托盤傳認證失利　斗山有望獨吃Rubin CCL訂單",
    "date": "2025-11-21",
@@ -3296,6 +3470,25 @@
    "fetched_at": "2026-11-10 02:34"
   },
   {
+   "id": "ieknet.iek.org.tw:b38c89781d264b54868671d3180e2fb6",
+   "title": "台光電 卡位M9新世代材料",
+   "date": "2025-11-03",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=b38c89781d264b54868671d3180e2fb6",
+   "summary": "AI伺服器平台全面升級，高階材料迎來新一輪汰換潮。台光電（2383）表示，2026年將以M8+過渡方案銜接M9新世代材料，後者預計於2026年下半年量產。受惠於AI伺服器與800G交換器需求延續，法人看好AI基礎建設業務比重可望突破7成，成長動能將一路延續至2026年。 因應需求",
+   "source": "IEK",
+   "author": "工商時報,楊絡懸／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "台光電"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
    "id": "uanalyze.com.tw:5895937383",
    "title": "HVLP4銅箔與M9玻纖布推動PCB規格升級：台燿、金居、台光電、南電、景碩",
    "date": "2025-11-02",
@@ -3388,6 +3581,43 @@
    "fetched_at": "2026-11-10 02:32"
   },
   {
+   "id": "ieknet.iek.org.tw:d71a350b63b847f4b8e565ba3ed95b7f",
+   "title": "TPCA Show暖場 材料戰先開打",
+   "date": "2025-10-20",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=d71a350b63b847f4b8e565ba3ed95b7f",
+   "summary": "TPCA Show本周登場，聚焦AI時代高效能與高能耗挑戰，展前市場已先掀起一場「材料戰」，隨輝達GB系列平台放量、美系雲端業者加速自研ASIC專案，高階CCL（銅箔基板）用料需求暴增，玻纖布與高階銅箔（HVLP）雙雙陷入結構性緊繃，供應鏈正邁入「得材料者得天下」的新一輪備戰循環。 <",
+   "source": "IEK",
+   "author": "工商時報,楊絡懸／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
+   "id": "ieknet.iek.org.tw:8d6ef1f0f8f0445fb7432db9ca2bf1d6",
+   "title": "AI伺服器點火 PCB供應鏈升溫",
+   "date": "2025-10-02",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=8d6ef1f0f8f0445fb7432db9ca2bf1d6",
+   "summary": "AI伺服器推升PCB邁向高層數、大面積與高速傳輸新門檻，材料與製程升級迫在眉睫。隨著NVIDIA、AWS、Google等自研晶片平台密集放量，供應鏈從銅箔、基板到加工技術全面翻新。TPCA Show將於10月22日登場，聚焦HVLP銅箔、玻纖布選型與高縱深比製程等新世代需求，業界也加速卡位新材",
+   "source": "IEK",
+   "author": "工商時報,楊絡懸／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
    "id": "uanalyze.com.tw:8907330978",
    "title": "PCB行情結束了？女王廖婉婷：「漲價最兇行情落在『這個時間』！」台光電(2383)股價1255元還能追? 金居、聯茂...「甜蜜買點」一次看!",
    "date": "2025-09-09",
@@ -3428,6 +3658,27 @@
    "fetched_at": "2026-11-10 02:32"
   },
   {
+   "id": "ieknet.iek.org.tw:10dbfcd6b2e146b5a0f6ac9359ae4924",
+   "title": "日東紡擴產玻纖布　專家：台廠爭取訂單迎轉型契機",
+   "date": "2025-09-02",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=10dbfcd6b2e146b5a0f6ac9359ae4924",
+   "summary": "（中央社記者江明晏台北2025年9月2日電）AI伺服器需求爆發，帶動玻纖布材料供不應求，日東紡宣布投資約31億元大擴產，衝擊玻纖布、CCL、PCB族群等台廠股價，但分析師認為產能要到2027年才開出，台廠積極在市場缺口中爭取訂單，投資高階材料，成為中長期轉型的契機。 因應A",
+   "source": "IEK",
+   "author": "中央社,,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "玻纖布廠"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "玻纖布 / Low-Dk",
+    "擴產 / 產能",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-20 13:19"
+  },
+  {
    "id": "digitimes.com.tw:0000731319_S0N2QPJE2NNU9U8V0NF3M",
    "title": "日廠擴產緩解CoWoS材料缺貨　台系玻纖布業者仍有挑戰",
    "date": "2025-09-02",
@@ -3465,6 +3716,25 @@
     "AI 伺服器 / 交換器"
    ],
    "fetched_at": "2026-11-10 11:04"
+  },
+  {
+   "id": "ieknet.iek.org.tw:c1bc7702cd21439bb4dc91fa4eeeef7a",
+   "title": "高階玻纖布 中長期需求確立",
+   "date": "2025-08-27",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c1bc7702cd21439bb4dc91fa4eeeef7a",
+   "summary": "近期市場熱議高階電子玻纖布（石英布，俗稱Q布）在新世代高速交換器與AI伺服器平台的應用前景，法人與產業人士普遍認為，Q布大規模放量仍需時間，關鍵時點將落在2026年之後，2027年才有望進一步擴大。 根據產業鏈調查，1.6T資料中心交換器，已逐步導入M9等級銅箔基板（CCL），而",
+   "source": "IEK",
+   "author": "工商時報,李娟萍／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-20 13:19"
   },
   {
    "id": "digitimes.com.tw:0000730729_S9O8TGVD1FUALSL2312JR",
@@ -3519,6 +3789,28 @@
     "營收 / 財報"
    ],
    "fetched_at": "2026-11-11 08:49"
+  },
+  {
+   "id": "ieknet.iek.org.tw:c01c239264554e9792c27a7a1e5dc618",
+   "title": "CCL漲潮來了 台廠三猛將熱身",
+   "date": "2025-08-18",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=c01c239264554e9792c27a7a1e5dc618",
+   "summary": "銅箔基板（CCL）8月中旬出現漲價潮。大陸建滔集團上周宣布CEM-1、22F、V0、HB與FR-4等中低階產品每張加價人民幣10元，帶動二線廠商跟進。法人指出，這是陸廠多年低價競爭後由龍頭廠帶頭連番喊漲，意味低價環境暫告一段落。 隨著AI伺服器需求升溫，台灣CCL三雄台光電、台燿",
+   "source": "IEK",
+   "author": "工商時報,李娟萍／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "台燿",
+    "建滔"
+   ],
+   "topics": [
+    "銅箔 / HVLP",
+    "漲價 / 報價",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-20 13:19"
   },
   {
    "id": "digitimes.com.tw:729779",
@@ -4375,6 +4667,26 @@
     "擴產 / 產能"
    ],
    "fetched_at": "2026-11-10 11:02"
+  },
+  {
+   "id": "ieknet.iek.org.tw:def8debbbf8f4bcea401301e8092937d",
+   "title": "5G商機亮 聯茂、台燿、台光電 CCL三雄泛幽光",
+   "date": "2019-10-18",
+   "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=def8debbbf8f4bcea401301e8092937d",
+   "summary": "銅箔基板廠第四季營運進入淡季，不過，法人仍看好CCL將持續受惠於電子產品傳輸協定升級，對高頻高速材料需求持續提升，並且在5G世代下，將加速網通、手機、電信設備等產品對CCL材料升級需求，產業看法仍正向。CCL三雄的聯茂（6213）、台燿（6274）及台光電（2383）今日股價相較大盤表現亮眼。",
+   "source": "IEK",
+   "author": "《聯合晚報》,記者葉子菁／台北報導,工研院產科國際所,產業科技國際策略發展所,IEK,工業技術研究院,ITRI,ieknet.iek.org.tw,iekconsult@itri.org.tw",
+   "image": "",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "台燿",
+    "聯茂"
+   ],
+   "topics": [
+    "銅箔 / HVLP"
+   ],
+   "fetched_at": "2026-11-20 13:19"
   },
   {
    "id": "digitimes.com.tw:0000570682_FNQ7PYMH7TUK2Z3QWCHGE",
