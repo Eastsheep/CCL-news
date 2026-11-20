@@ -10,8 +10,4 @@ jobs:
           UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36 CCLNewsBot/0.1 (internal research)"
           B=https://ieknet.iek.org.tw/ieknews
           curl -sSL -A "$UA" "$B/default.aspx?actiontype=ieknews&indu_idno=1" -o l.html
-          grep -oE '20[0-9]{2}/[0-9]{1,2}/[0-9]{1,2}' l.html | sort | uniq -c
-          grep -oiE '(href|onclick)="[^"]*(page|pg|more|next|list)[^"]*"' l.html | sort -u | head -30
-          grep -oiE '__doPostBack\([^)]*\)|pageindex[^&"]*|PageNo[^&"]*' l.html | sort -u | head
-          grep -oE '(ajax|url)\s*[:=]\s*["\x27][^"\x27]+' l.html | sort -u | head -20
-          for q in "news_list.aspx?actiontype=ieknews&indu_idno=1" "news_more.aspx?actiontype=ieknews&indu_idno=1&page=2" "default.aspx?actiontype=ieknews&indu_idno=1&page=2" "default.aspx?actiontype=ieknews&indu_idno=1&pageindex=2"; do sleep 2; curl -sSL -A "$UA" "$B/$q" -o p.html; echo "$q $(wc -c <p.html) $(grep -oE 'nsl_id=[0-9a-f]{32}' p.html | sort -u | head -1)"; done
+          grep -n -iE 'PageIndex|<form|submit\(\)|function [a-zA-Z]*[Pp]age' l.html | cut -c1-250 | head -20
