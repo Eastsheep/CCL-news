@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21 02:39",
+ "updated_at": "2026-11-21 11:13",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -33,6 +33,62 @@
   "營收 / 財報"
  ],
  "items": [
+  {
+   "origin": "",
+   "id": "ctee.com.tw:20261121700014",
+   "title": "台積電跌到2千能買？杜金龍曝「合理價」 再點名1檔記憶體、1檔CCL遭錯殺",
+   "date": "2026-11-21",
+   "url": "https://www.ctee.com.tw/news/20261121700014-430201",
+   "summary": "台股跌勢再度失控，20日盤中一度失守36,000點，終場重挫2,393點、收36,033點，統計自16日收盤41,040點以來，短短4個交易日再跌逾5,000點、跌幅約12.2％。對此，股市老先覺、資深分析師杜金龍認為，這波屬系統性風險下的全面殺盤，即使基本面良好的公司也難倖免，但台積電已接近其估算的合理價值區，台光電、南亞科等獲利仍具支撐的個股，也可利用急跌尋找分批承接機會。 台股16日重",
+   "source": "工商時報",
+   "author": "",
+   "image": "",
+   "paywall_hint": false,
+   "fetched_at": "2026-11-21 11:13",
+   "companies": [
+    "台光電"
+   ],
+   "topics": [
+    "營收 / 財報"
+   ]
+  },
+  {
+   "origin": "",
+   "id": "money.udn.com:5612/9891963",
+   "title": "PCB載板散熱淪多頭重災區　台光電、欣興湧賣壓跌停",
+   "date": "2026-11-20",
+   "url": "https://money.udn.com/money/story/5612/9891963",
+   "summary": "人工智慧（AI）利空頻傳，市場信心潰堤，台股今天終場大跌2393.6點或6.23%，收在36033.29點，創下近7個月...",
+   "source": "經濟日報",
+   "author": "經濟日報",
+   "image": "https://money.udn.com/static/img/moneyudn.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電"
+   ],
+   "topics": [
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-21 11:13"
+  },
+  {
+   "origin": "",
+   "id": "money.udn.com:5612/9891901",
+   "title": "南寶成立半導體產業發展部　拚明年業績續創新高",
+   "date": "2026-11-20",
+   "url": "https://money.udn.com/money/story/5612/9891901",
+   "summary": "南寶樹脂董事長暨執行長黃映霖表示，近期成立「半導體產業發展部」，聚焦半導體、光電與銅箔基板（CCL）材料3大領域。短期以...",
+   "source": "經濟日報",
+   "author": "經濟日報",
+   "image": "https://money.udn.com/static/img/moneyudn.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "銅箔 / HVLP",
+    "樹脂 / 添加劑"
+   ],
+   "fetched_at": "2026-11-21 11:13"
+  },
   {
    "origin": "",
    "id": "money.udn.com:5612/9891855",
@@ -111,6 +167,25 @@
    "fetched_at": "2026-11-20 16:47"
   },
   {
+   "origin": "",
+   "id": "money.udn.com:5710/9884830",
+   "title": "國精化衝刺電子材料",
+   "date": "2026-11-18",
+   "url": "https://money.udn.com/money/story/5710/9884830",
+   "summary": "國精化（4722）加速擴大電子材料布局，董事長蔡志翔昨（17）日在法說會表示，受惠出貨成長及產能擴充，明年底電子化學材料營收占比可望升至40%至45%，長期目標突破50%。此外，M8、M9材料已進入放量及擴產階段，明年將增設兩條M8以上HC材料產線。",
+   "source": "經濟日報",
+   "author": "經濟日報",
+   "image": "https://money.udn.com/static/img/moneyudn.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "M7/M8/M9 等級",
+    "擴產 / 產能",
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-21 11:13"
+  },
+  {
    "id": "uanalyze.com.tw:5534959876",
    "title": "國精化：CCL材料M8、M9世代已獲客戶認證 看好AI伺服器、低軌衛星需求強勁",
    "date": "2026-11-17",
@@ -151,6 +226,25 @@
    "fetched_at": "2026-11-20 16:47"
   },
   {
+   "origin": "",
+   "id": "money.udn.com:5607/9883975",
+   "title": "台股勉強守住4萬點！PCB 族群再崩 載板三雄、金像電齊跌停",
+   "date": "2026-11-17",
+   "url": "https://money.udn.com/money/story/5607/9883975",
+   "summary": "台股今（17）日收盤勉強守住4萬點關卡，印刷電路板（PCB）族群卻再遭重挫，載板三雄欣興（3037）、南電（8046）、景碩（3189）與PCB大廠金像電（2368）同步跌停，賣壓並延伸至銅箔基板（CCL）、玻纖布等上游材料股。",
+   "source": "經濟日報",
+   "author": "經濟日報",
+   "image": "https://money.udn.com/static/img/moneyudn.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "CPO / 載板"
+   ],
+   "fetched_at": "2026-11-21 11:13"
+  },
+  {
    "id": "uanalyze.com.tw:9739259689",
    "title": "台光電：輝達對台光電的營收占比從未超過20%",
    "date": "2026-11-16",
@@ -187,6 +281,25 @@
     "擴產 / 產能"
    ],
    "fetched_at": "2026-11-17 04:31"
+  },
+  {
+   "origin": "",
+   "id": "money.udn.com:5739/9880600",
+   "title": "台光電、大立光 認購悍",
+   "date": "2026-11-16",
+   "url": "https://money.udn.com/money/story/5739/9880600",
+   "summary": "台股近日隨市場避險情緒降溫，啟動跌深反彈走勢，盤面題材股輪動點火，台光電（2383）、大立光等兩檔吸引法人買盤回補，預料後市仍有可為，發行券商建議，偏多投資人可透過權證的槓桿效果，擴大獲利空間。",
+   "source": "經濟日報",
+   "author": "經濟日報",
+   "image": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/11/16/35520833.jpg&M=1&s=Y&x=0&y=0&sw=1122&sh=605&sl=W&fw=1050&exp=3600",
+   "paywall_hint": false,
+   "companies": [
+    "台光電"
+   ],
+   "topics": [
+    "營收 / 財報"
+   ],
+   "fetched_at": "2026-11-21 11:13"
   },
   {
    "origin": "",
