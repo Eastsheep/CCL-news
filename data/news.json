@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24 14:01",
+ "updated_at": "2026-11-25 04:42",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -33,6 +33,44 @@
   "營收 / 財報"
  ],
  "items": [
+  {
+   "origin": "",
+   "id": "wealth.com.tw:e2ad29e5-96fb-44a8-8635-6c8d05d122da",
+   "title": "AI搶占玻纖布產能！PCB價格持續調漲　2類LED顯示器成本季增2%",
+   "date": "2026-11-24",
+   "url": "https://www.wealth.com.tw/articles/e2ad29e5-96fb-44a8-8635-6c8d05d122da",
+   "summary": "根據TrendForce最新《LED顯示屏模組季度成本與市場分析》報告，2026年第四季由於PCB價格持續調漲，推升COB/SMD LED顯示器成本，以P1.25(像素間距為1.25mm)產品為例，COB/SMD LED顯示器整體BOM cost季增約2%，延續第三季的上升態勢。相較之下，P1.25 MiP LED顯示器則因封裝價格下滑，BOM cost季減約4%。",
+   "source": "財訊",
+   "author": "",
+   "image": "https://static.wealth.com.tw/dd72c25230cf26b07d36e3d552f3531a9bf8e5b3.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "漲價 / 報價",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-25 04:42"
+  },
+  {
+   "origin": "",
+   "id": "money.udn.com:5612/9899068",
+   "title": "AI搶占玻纖布產能墊高PCB價格 第4季COB/SMD LED顯示屏成本季增2%",
+   "date": "2026-11-24",
+   "url": "https://money.udn.com/money/story/5612/9899068",
+   "summary": "根據TrendForce最新《LED顯示屏模組季度成本與市場分析》報告，2026年第4季由於PCB價格持續調漲，推升COB/SMD LED顯示屏成本，以P1.25（像素間距為1.25mm）產品為例，COB/SMD LED顯示屏整體BOM cost季增約2%，延續第3季的上升態勢。相較之下，P1.25 MiP LED顯示螢幕則因封裝價格下滑，BOM cost季減約4%。",
+   "source": "經濟日報",
+   "author": "經濟日報",
+   "image": "https://money.udn.com/static/img/moneyudn.jpg",
+   "paywall_hint": false,
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "漲價 / 報價",
+    "擴產 / 產能"
+   ],
+   "fetched_at": "2026-11-25 04:42"
+  },
   {
    "origin": "",
    "id": "ctee.com.tw:20261124701177",
