@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25 04:42",
+ "updated_at": "2026-11-25 12:56",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -33,6 +33,28 @@
   "營收 / 財報"
  ],
  "items": [
+  {
+   "origin": "",
+   "id": "money.udn.com:5607/9900529",
+   "title": "瑞銀喊買 CCL！這檔 ETF 可以直接參與行情",
+   "date": "2026-11-25",
+   "url": "https://money.udn.com/money/story/5607/9900529",
+   "summary": "台股上演一日輝達執行長黃仁勳回歸慶祝行情後，25日受到美股影響走弱，PCB族群也由紅翻黑。在市場情緒震盪之際，外資對產業基本面的看法並未轉趨保守。瑞銀針對CCL三雄發布最新報告，最看好台光電（2383）的高階AI CCL市場地位；台燿（6274）則具有網通與產品組合升級題材；聯茂（6213）受惠一般伺服器平台升級，未來M9、M10若順利放量，則有進一步上行空間。",
+   "source": "經濟日報",
+   "author": "經濟日報",
+   "image": "https://money.udn.com/static/img/moneyudn.jpg",
+   "paywall_hint": false,
+   "companies": [
+    "台光電",
+    "台燿",
+    "聯茂"
+   ],
+   "topics": [
+    "M7/M8/M9 等級",
+    "AI 伺服器 / 交換器"
+   ],
+   "fetched_at": "2026-11-25 12:56"
+  },
   {
    "origin": "",
    "id": "wealth.com.tw:e2ad29e5-96fb-44a8-8635-6c8d05d122da",
