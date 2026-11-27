@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27 03:39",
+ "updated_at": "2026-11-27 12:16",
  "sources": [
   "DIGITIMES",
   "優分析",
@@ -33,6 +33,26 @@
   "營收 / 財報"
  ],
  "items": [
+  {
+   "origin": "",
+   "id": "ctee.com.tw:20261127700215",
+   "title": "全球電子協會預估 PCB短缺延續至2027年H1",
+   "date": "2026-11-27",
+   "url": "https://www.ctee.com.tw/news/20261127700215-430502",
+   "summary": "全球電子協會（Global Electronics Association）26日發布報告指出，AI伺服器需求強勁，高層數印刷電路板（PCB）大量消耗玻纖布、樹脂及銅箔，供應吃緊已波及汽車、工業、醫療及電信業。 該協會預估，PCB短缺至少延續至2027年上半年，2028年中以前難以明顯緩解。 全球電子協會指出，一般個人電腦的電路板約為12層，AI伺服器用板則朝40至60層甚至更高發展。板",
+   "source": "工商時報",
+   "author": "",
+   "image": "",
+   "paywall_hint": false,
+   "fetched_at": "2026-11-27 12:15",
+   "companies": [],
+   "topics": [
+    "玻纖布 / Low-Dk",
+    "銅箔 / HVLP",
+    "樹脂 / 添加劑",
+    "AI 伺服器 / 交換器"
+   ]
+  },
   {
    "origin": "",
    "id": "ctee.com.tw:20261127700095",
